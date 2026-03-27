@@ -15,7 +15,15 @@ function createProvider(
     name: "OpenAI",
     api_key_prefix: "sk-",
     chat_model: "OpenAIChatModel",
-    models: [{ id: "gpt-5", name: "GPT-5" }],
+    models: [
+      {
+        id: "gpt-5",
+        name: "GPT-5",
+        supports_multimodal: false,
+        supports_image: false,
+        supports_video: false,
+      },
+    ],
     extra_models: [],
     is_custom: false,
     is_local: false,
