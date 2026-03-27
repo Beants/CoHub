@@ -92,3 +92,7 @@ CLAUDE.md
 
 # Local git worktrees
 .worktrees/
+
+# Local CoPaw runtime state for source checkout startup
+.copaw-dev/
+.copaw-dev.secret/

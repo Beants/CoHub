@@ -422,6 +422,8 @@
     "llmConfiguration": "LLM 配置",
     "providersTitle": "提供商",
     "providersDescription": "为每个提供商配置 API 密钥和端点。",
+    "showAllProvidersToggle": "显示全部提供商",
+    "showAllProvidersHint": "关闭时仅显示可用提供商，打开后显示全部。",
     "llmTitle": "LLM",
     "llmDescription": "从已授权的提供商中选择活动的 LLM 模型。",
     "configureProvider": "配置 {{name}}",

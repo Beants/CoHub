@@ -408,6 +408,8 @@
     "llmConfiguration": "LLM設定",
     "providersTitle": "プロバイダー",
     "providersDescription": "各プロバイダーのAPIキーとエンドポイントを設定します。",
+    "showAllProvidersToggle": "すべてのプロバイダーを表示",
+    "showAllProvidersHint": "オフでは準備完了のプロバイダーのみ表示され、オンですべて表示されます。",
     "llmTitle": "LLM",
     "llmDescription": "認証済みプロバイダーからアクティブなLLMモデルを選択します。",
     "configureProvider": "{{name}} を設定",

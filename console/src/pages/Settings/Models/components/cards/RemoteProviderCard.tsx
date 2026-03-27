@@ -8,6 +8,7 @@ import {
 import type { ProviderInfo, ActiveModelsInfo } from "../../../../../api/types";
 import { ProviderConfigModal } from "../modals/ProviderConfigModal";
 import { ModelManageModal } from "../modals/ModelManageModal";
+import { getProviderReadiness } from "../../providerVisibility";
 import api from "../../../../../api";
 import { useTranslation } from "react-i18next";
 import styles from "../../index.module.less";
@@ -59,20 +60,8 @@ export function RemoteProviderCard({
 
   const totalCount = provider.models.length + provider.extra_models.length;
 
-  let isConfigured = false;
-
-  if (provider.is_local) {
-    isConfigured = true;
-  } else if (provider.is_custom && provider.base_url) {
-    isConfigured = true;
-  } else if (provider.require_api_key === false) {
-    isConfigured = true;
-  } else if (provider.require_api_key && provider.api_key) {
-    isConfigured = true;
-  }
-
-  const hasModels = totalCount > 0;
-  const isAvailable = isConfigured && hasModels;
+  const readiness = getProviderReadiness(provider);
+  const isAvailable = readiness === "ready";
 
   const providerTag = provider.is_custom ? (
     <Tag color="blue" style={{ marginLeft: 8, fontSize: 11 }}>
@@ -86,22 +75,22 @@ export function RemoteProviderCard({
 
   const statusLabel = isAvailable
     ? t("models.providerAvailable")
-    : isConfigured
+    : readiness === "no-models"
     ? t("models.providerNoModels")
     : t("models.providerNotConfigured");
   const statusType = isAvailable
     ? "enabled"
-    : isConfigured
+    : readiness === "no-models"
     ? "partial"
     : "disabled";
   const statusDotColor = isAvailable
     ? "#52c41a"
-    : isConfigured
+    : readiness === "no-models"
     ? "#faad14"
     : "#d9d9d9";
   const statusDotShadow = isAvailable
     ? "0 0 0 2px rgba(82, 196, 26, 0.2)"
-    : isConfigured
+    : readiness === "no-models"
     ? "0 0 0 2px rgba(250, 173, 20, 0.2)"
     : "none";
 

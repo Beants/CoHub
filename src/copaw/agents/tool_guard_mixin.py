@@ -16,6 +16,12 @@ from typing import Any, Literal
 
 from agentscope.message import Msg
 
+from .recruiting_tool_guard import should_block_recruiting_tool_call
+from .recruiting_tool_guard import (
+    build_recruiting_stop_reply,
+    find_latest_recruiting_tool_context,
+    find_recruiting_stop_context,
+)
 from ..security.tool_guard.models import TOOL_GUARD_DENIED_MARK
 
 logger = logging.getLogger(__name__)
@@ -53,6 +59,21 @@ class ToolGuardMixin:
     def _should_require_approval(self) -> bool:
         """``True`` when a ``session_id`` is available for approval."""
         return bool(self._request_context.get("session_id"))
+
+    def _get_recruiting_runtime_block(self, tool_name: str):
+        """Return a recruiting turn stop context when the call must be blocked."""
+        memory_content = getattr(self.memory, "content", [])
+        return should_block_recruiting_tool_call(memory_content, tool_name)
+
+    def _get_recruiting_stop_context(self):
+        """Return the current-turn recruiting stop context, if present."""
+        memory_content = getattr(self.memory, "content", [])
+        return find_recruiting_stop_context(memory_content)
+
+    def _get_latest_recruiting_tool_context(self):
+        """Return the latest recruiting tool context in the current user turn."""
+        memory_content = getattr(self.memory, "content", [])
+        return find_latest_recruiting_tool_context(memory_content)
 
     def _last_tool_response_is_denied(self) -> bool:
         """Check if the last message is a guard-denied tool result."""
@@ -116,6 +137,22 @@ class ToolGuardMixin:
         tool_input: dict = tool_call.get("input", {})
 
         try:
+            recruiting_block = self._get_recruiting_runtime_block(tool_name)
+            if recruiting_block is not None:
+                logger.warning(
+                    "Recruiting guard: blocking tool '%s' after stop signal "
+                    "(site=%s, status=%s, source_tool=%s)",
+                    tool_name,
+                    recruiting_block.site,
+                    recruiting_block.status,
+                    recruiting_block.source_tool,
+                )
+                return await self._acting_recruiting_blocked(
+                    tool_call,
+                    tool_name,
+                    recruiting_block,
+                )
+
             if tool_name and engine.enabled:
                 if engine.is_denied(tool_name):
                     logger.warning(
@@ -179,6 +216,58 @@ class ToolGuardMixin:
             )
 
         return await super()._acting(tool_call)  # type: ignore[misc]
+
+    async def _acting_recruiting_blocked(
+        self,
+        tool_call: dict[str, Any],
+        tool_name: str,
+        stop_context,
+    ) -> dict | None:
+        """Return a hard denial when the recruiting flow says stop."""
+        from agentscope.message import ToolResultBlock
+
+        blocked_text = (
+            "⛔ **Recruiting Flow Stopped / 招聘流程已停止**\n\n"
+            f"- Tool / 工具: `{tool_name}`\n"
+            f"- Site / 站点: `{stop_context.site}`\n"
+            f"- Previous status / 上一状态: `{stop_context.status}`\n"
+            f"- Source tool / 来源工具: `{stop_context.source_tool}`\n"
+            f"- stop_current_turn={str(stop_context.stop_current_turn).lower()}\n\n"
+            f"{stop_context.message}\n\n"
+            + (
+                "This turn already received a Liepin stop signal. Do not call "
+                "`browser_use` or any `liepin_*` tool again until the user sends "
+                "a new message.\n"
+                "本轮已经收到猎聘 MCP 的停止信号。请保持当前猎聘窗口，不要切换"
+                "到新的浏览器流程，等待用户下一条消息后再继续。"
+                if stop_context.stop_current_turn
+                else
+                "This Liepin recruiting flow is already active in the current "
+                "turn. Do not switch to `browser_use`; stay inside the Liepin "
+                "MCP tools for this turn.\n"
+                "当前轮次已经进入猎聘招聘流程。不要切换到 `browser_use`，"
+                "请继续停留在 Liepin MCP 工具流里。"
+            )
+        )
+
+        tool_res_msg = Msg(
+            "system",
+            [
+                ToolResultBlock(
+                    type="tool_result",
+                    id=tool_call["id"],
+                    name=tool_name,
+                    output=[
+                        {"type": "text", "text": blocked_text},
+                    ],
+                ),
+            ],
+            "system",
+        )
+
+        await self.print(tool_res_msg, True)
+        await self.memory.add(tool_res_msg)
+        return None
 
     # ------------------------------------------------------------------
     # Denied / Approval responses
@@ -316,7 +405,7 @@ class ToolGuardMixin:
         self,
         tool_choice: (Literal["auto", "none", "required"] | None) = None,
     ) -> Msg:
-        """Short-circuit reasoning when awaiting guard approval."""
+        """Short-circuit reasoning when approval or recruiting stop is pending."""
         if self._last_tool_response_is_denied():
             pending = getattr(self, "_tool_guard_pending_info", None) or {}
             tool_name = pending.get("tool_name", "unknown")
@@ -337,6 +426,32 @@ class ToolGuardMixin:
                 "or send any message to deny.\n"
                 "输入 `/approve` 批准执行，"
                 "或发送任意消息拒绝。",
+                "assistant",
+            )
+            await self.print(msg, True)
+            await self.memory.add(msg)
+            return msg
+
+        stop_context = self._get_recruiting_stop_context()
+        if stop_context is not None:
+            msg = Msg(
+                self.name,
+                build_recruiting_stop_reply(stop_context),
+                "assistant",
+            )
+            await self.print(msg, True)
+            await self.memory.add(msg)
+            return msg
+
+        latest_context = self._get_latest_recruiting_tool_context()
+        if (
+            latest_context is not None
+            and latest_context.status == "ok"
+            and latest_context.summary_markdown.strip()
+        ):
+            msg = Msg(
+                self.name,
+                latest_context.summary_markdown.strip(),
                 "assistant",
             )
             await self.print(msg, True)

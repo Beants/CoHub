@@ -10,6 +10,7 @@ Example:
 """
 
 
+import json
 import logging
 from typing import List, Sequence, Tuple, Type, Any, Union, Optional
 
@@ -201,6 +202,10 @@ def _create_file_block_support_formatter(
             Returns:
                 Tuple of (text_representation, multimodal_data)
             """
+            recruiting_summary = _extract_recruiting_summary_markdown(output)
+            if recruiting_summary:
+                return f"招聘搜索结果摘要：\n{recruiting_summary}", []
+
             if isinstance(output, str):
                 return output, []
 
@@ -261,6 +266,55 @@ def _create_file_block_support_formatter(
         f"FileBlockSupport{base_formatter_class.__name__}"
     )
     return FileBlockSupportFormatter
+
+
+def _extract_recruiting_summary_markdown(
+    output: Union[str, List[dict]],
+) -> str:
+    """Return pre-rendered recruiting summary markdown when present."""
+    payload = _extract_first_json_payload(output)
+    if not isinstance(payload, dict):
+        return ""
+
+    site = str(payload.get("site") or "").strip().lower()
+    if site not in {"liepin", "boss", "zhaopin"}:
+        return ""
+
+    return str(payload.get("summary_markdown") or "").strip()
+
+
+def _extract_first_json_payload(
+    output: Union[str, List[dict]],
+) -> dict[str, Any] | None:
+    """Extract the first JSON object payload from tool output text."""
+    if isinstance(output, str):
+        payload = _load_json_object(output)
+        return payload if isinstance(payload, dict) else None
+
+    if not isinstance(output, list):
+        return None
+
+    for block in output:
+        if not isinstance(block, dict):
+            continue
+        if block.get("type") != "text":
+            continue
+        payload = _load_json_object(str(block.get("text") or ""))
+        if isinstance(payload, dict):
+            return payload
+    return None
+
+
+def _load_json_object(text: str) -> dict[str, Any] | None:
+    """Best-effort parse of a JSON object string."""
+    raw = str(text or "").strip()
+    if not raw.startswith("{"):
+        return None
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError:
+        return None
+    return payload if isinstance(payload, dict) else None
 
 
 def _strip_top_level_message_name(

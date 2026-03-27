@@ -12,6 +12,8 @@ from agentscope.model import OpenAIChatModel
 from agentscope.model._model_response import ChatResponse
 from pydantic import BaseModel
 
+from copaw.local_models.tag_parser import extract_thinking_from_text
+
 
 def _clone_with_overrides(obj: Any, **overrides: Any) -> Any:
     """Clone a stream object into a mutable namespace with overrides."""
@@ -130,6 +132,51 @@ def _sanitize_stream_item(item: Any) -> Any:
     return _sanitize_chunk(item)
 
 
+def _strip_raw_thinking_text(text: str) -> str:
+    """Remove raw `<think>` sections and dangling `</think>` tails."""
+    cleaned = text
+
+    while "<think>" in cleaned:
+        parsed = extract_thinking_from_text(cleaned)
+        cleaned = parsed.remaining_text
+        if parsed.has_open_tag and not cleaned:
+            return ""
+
+    if "</think>" in cleaned:
+        cleaned = cleaned.rsplit("</think>", 1)[-1]
+
+    return cleaned.strip()
+
+
+def _strip_raw_thinking_blocks(content: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Drop raw thinking-tag text from parsed response blocks."""
+    sanitized: list[dict[str, Any]] = []
+
+    for block in content:
+        if block.get("type") != "text":
+            sanitized.append(block)
+            continue
+
+        text = block.get("text")
+        if not isinstance(text, str):
+            sanitized.append(block)
+            continue
+
+        cleaned = _strip_raw_thinking_text(text)
+        if not cleaned:
+            continue
+
+        if cleaned == text:
+            sanitized.append(block)
+            continue
+
+        updated_block = dict(block)
+        updated_block["text"] = cleaned
+        sanitized.append(updated_block)
+
+    return sanitized
+
+
 class _SanitizedStream:
     """Proxy OpenAI async stream that sanitizes each emitted item and
     captures ``extra_content`` from tool-call chunks (used by Gemini
@@ -199,6 +246,7 @@ class OpenAIChatModelCompat(OpenAIChatModel):
             response=sanitized_response,
             structured_model=structured_model,
         ):
+            parsed.content = _strip_raw_thinking_blocks(parsed.content)
             if sanitized_response.extra_contents:
                 for block in parsed.content:
                     if block.get("type") != "tool_use":

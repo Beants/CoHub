@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
-import { Button } from "@agentscope-ai/design";
+import { Button, Switch } from "@agentscope-ai/design";
 import { PlusOutlined } from "@ant-design/icons";
 import { useProviders } from "./useProviders";
+import { filterProvidersByVisibility } from "./providerVisibility";
 import {
   PageHeader,
   LoadingState,
@@ -21,18 +22,24 @@ function ModelsPage() {
   const { providers, activeModels, loading, error, fetchAll } = useProviders();
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   const [addProviderOpen, setAddProviderOpen] = useState(false);
+  const [showAllProviders, setShowAllProviders] = useState(false);
 
   const refreshProvidersSilently = () => fetchAll(false);
+
+  const visibleProviders = useMemo(
+    () => filterProvidersByVisibility(providers, showAllProviders),
+    [providers, showAllProviders],
+  );
 
   const { regularProviders, embeddedProviders } = useMemo(() => {
     const regular: ProviderInfo[] = [];
     const embedded: ProviderInfo[] = [];
-    for (const p of providers) {
+    for (const p of visibleProviders) {
       if (p.is_local) embedded.push(p);
       else regular.push(p);
     }
     return { regularProviders: regular, embeddedProviders: embedded };
-  }, [providers]);
+  }, [visibleProviders]);
 
   const handleMouseEnter = (providerId: string) => {
     setHoveredCard(providerId);
@@ -70,14 +77,30 @@ function ModelsPage() {
                 title={t("models.providersTitle")}
                 description={t("models.providersDescription")}
               />
-              <Button
-                type="primary"
-                icon={<PlusOutlined />}
-                onClick={() => setAddProviderOpen(true)}
-                className={styles.addProviderBtn}
-              >
-                {t("models.addProvider")}
-              </Button>
+              <div className={styles.sectionHeaderActions}>
+                <div className={styles.visibilityToggle}>
+                  <Switch
+                    checked={showAllProviders}
+                    onChange={setShowAllProviders}
+                  />
+                  <div className={styles.visibilityToggleText}>
+                    <div className={styles.visibilityToggleLabel}>
+                      {t("models.showAllProvidersToggle")}
+                    </div>
+                    <div className={styles.visibilityToggleHint}>
+                      {t("models.showAllProvidersHint")}
+                    </div>
+                  </div>
+                </div>
+                <Button
+                  type="primary"
+                  icon={<PlusOutlined />}
+                  onClick={() => setAddProviderOpen(true)}
+                  className={styles.addProviderBtn}
+                >
+                  {t("models.addProvider")}
+                </Button>
+              </div>
             </div>
 
             {regularProviders.length > 0 && (

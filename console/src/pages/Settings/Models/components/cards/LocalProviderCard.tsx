@@ -3,6 +3,7 @@ import { Card, Button, Tag } from "@agentscope-ai/design";
 import { AppstoreOutlined } from "@ant-design/icons";
 import type { ProviderInfo } from "../../../../../api/types";
 import { ModelManageModal } from "../modals/ModelManageModal";
+import { getProviderReadiness } from "../../providerVisibility";
 import { useTranslation } from "react-i18next";
 import styles from "../../index.module.less";
 
@@ -25,7 +26,7 @@ export function LocalProviderCard({
   const [modelManageOpen, setModelManageOpen] = useState(false);
 
   const totalCount = provider.models.length + provider.extra_models.length;
-  const statusReady = totalCount > 0;
+  const statusReady = getProviderReadiness(provider) === "ready";
   const statusLabel = statusReady
     ? t("models.available")
     : t("models.unavailable");

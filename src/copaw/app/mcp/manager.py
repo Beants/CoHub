@@ -188,6 +188,14 @@ class MCPClientManager:
     @staticmethod
     def _build_client(client_config: "MCPClientConfig") -> Any:
         """Build MCP client instance by configured transport."""
+        merged_env = dict(os.environ)
+        merged_env.update(
+            {
+                key: os.path.expandvars(value)
+                for key, value in (client_config.env or {}).items()
+            },
+        )
+
         rebuild_info = {
             "name": client_config.name,
             "transport": client_config.transport,
@@ -195,7 +203,7 @@ class MCPClientManager:
             "headers": client_config.headers or None,
             "command": client_config.command,
             "args": list(client_config.args),
-            "env": dict(client_config.env),
+            "env": dict(merged_env),
             "cwd": client_config.cwd or None,
         }
 
@@ -204,7 +212,7 @@ class MCPClientManager:
                 name=client_config.name,
                 command=client_config.command,
                 args=client_config.args,
-                env=client_config.env,
+                env=merged_env,
                 cwd=client_config.cwd or None,
             )
             setattr(client, "_copaw_rebuild_info", rebuild_info)

@@ -413,6 +413,8 @@
     "llmConfiguration": "Конфигурация LLM",
     "providersTitle": "Провайдеры",
     "providersDescription": "Настройте API-ключи и endpoints для каждого провайдера.",
+    "showAllProvidersToggle": "Показать всех провайдеров",
+    "showAllProvidersHint": "В выключенном состоянии показываются только готовые провайдеры, во включенном — все.",
     "llmTitle": "LLM",
     "llmDescription": "Выберите активную LLM-модель от авторизованного провайдера.",
     "configureProvider": "Настроить {{name}}",
