@@ -1,0 +1,1594 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - button "animation" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+      - generic [ref=e17]:
+        - link "人才推荐" [ref=e18] [cursor=pointer]:
+          - /url: /recommend
+          - generic [ref=e20]: 人才推荐
+        - link "职位管理" [ref=e21] [cursor=pointer]:
+          - /url: /job/manager
+          - img [ref=e22]:
+            - img [ref=e23]
+          - generic [ref=e26]: 职位管理
+        - link "搜索人才" [ref=e27] [cursor=pointer]:
+          - /url: /search
+          - img [ref=e28]:
+            - img [ref=e29]
+          - generic [ref=e32]: 搜索人才
+        - link "沟通 1" [ref=e33] [cursor=pointer]:
+          - /url: /chat/im
+          - img [ref=e34]:
+            - img [ref=e35]
+          - generic [ref=e39]:
+            - generic [ref=e40]: 沟通
+            - superscript [ref=e42]:
+              - generic [ref=e43]: "1"
+        - link "人才管理" [ref=e44] [cursor=pointer]:
+          - /url: /resume/apply
+          - img [ref=e45]:
+            - img [ref=e46]
+          - generic [ref=e49]: 人才管理
+        - link "猎头服务" [ref=e50] [cursor=pointer]:
+          - /url: https://msk.liepin.com
+          - img [ref=e51]:
+            - img [ref=e52]
+          - generic [ref=e56]: 猎头服务
+        - link "提效服务" [ref=e57] [cursor=pointer]:
+          - /url: /commerce/guide
+          - img [ref=e58]:
+            - img [ref=e59]
+          - generic [ref=e64]: 提效服务
+      - generic [ref=e67] [cursor=pointer]:
+        - img [ref=e68]:
+          - img [ref=e69]
+        - generic [ref=e73]: 我的专属顾问
+        - img [ref=e74]:
+          - img [ref=e75]
+      - generic [ref=e80]:
+        - link [ref=e82] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_008
+          - img [ref=e84]
+        - link [ref=e86] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-002
+          - img [ref=e88]
+        - link [ref=e90] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_008
+          - img [ref=e92]
+        - link [ref=e94] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-002
+          - img [ref=e96]
+    - generic [ref=e100]:
+      - generic [ref=e102]:
+        - generic [ref=e104]:
+          - tablist [ref=e105]:
+            - generic [ref=e107]:
+              - tab "人才推荐" [selected] [ref=e109] [cursor=pointer]:
+                - generic [ref=e110]: 人才推荐
+              - tab "意向人选" [ref=e112] [cursor=pointer]:
+                - generic [ref=e113]: 意向人选
+          - generic:
+            - generic:
+              - tabpanel "人才推荐"
+        - generic [ref=e117]:
+          - link [ref=e119] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_009
+            - img [ref=e121]
+          - link [ref=e123] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-001
+            - img [ref=e125]
+          - link [ref=e127] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_009
+            - img [ref=e129]
+          - link [ref=e131] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-001
+            - img [ref=e133]
+        - generic [ref=e135]:
+          - generic [ref=e137]:
+            - button "bell" [ref=e138] [cursor=pointer]:
+              - img "bell" [ref=e139]:
+                - img [ref=e140]
+            - superscript [ref=e142]:
+              - generic [ref=e143]: "2"
+          - button "招聘数据" [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]: 招聘数据
+          - button "邀新赠VIP" [ref=e150] [cursor=pointer]:
+            - generic [ref=e151]: 邀新赠VIP
+          - generic [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]: 我的权益
+            - img "down" [ref=e156]:
+              - img [ref=e157]
+          - generic [ref=e159] [cursor=pointer]:
+            - img [ref=e162]
+            - strong [ref=e164]: 王晓飞
+            - img "down" [ref=e165]:
+              - img [ref=e166]
+      - main [ref=e168]:
+        - generic [ref=e170]:
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - tablist [ref=e177]:
+                - tab "离心机技术总工" [selected] [ref=e181] [cursor=pointer]:
+                  - generic [ref=e183]: 离心机技术总工
+              - generic:
+                - generic:
+                  - tabpanel "离心机技术总工"
+            - button "职位管理" [ref=e184] [cursor=pointer]:
+              - img [ref=e185]:
+                - img [ref=e186]
+              - generic [ref=e188]: 职位管理
+          - generic [ref=e190]:
+            - img "avatar" [ref=e192]
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e196]: 【意向人选】AI理解岗位要求+补充人选
+                - generic [ref=e197]:
+                  - img "logo" [ref=e198]
+                  - generic [ref=e199]: 意向人选
+              - article [ref=e203]:
+                - paragraph [ref=e205]:
+                  - text: 我看这个岗位重点在
+                  - strong [ref=e206]: 离心机技术研发、产品质量把控和技术改进优化
+                  - text: ，我可以找找
+                  - strong [ref=e207]: 有10年以上离心机产品开发、离心机电控板设计经验的人选
+                  - text: ，并重点在
+                  - strong [ref=e208]: 离心机行业技术领先的公司
+                  - text: 的人选（如贝克曼库尔特、赛多利斯等）。
+              - generic [ref=e209]: 内容由AI生成
+              - generic [ref=e210] [cursor=pointer]:
+                - img [ref=e211]:
+                  - img [ref=e212]
+                - text: 可以，立即发起「意向人选」
+          - generic [ref=e216]: 系统推荐
+          - generic [ref=e220]:
+            - generic [ref=e222]:
+              - generic [ref=e223] [cursor=pointer]:
+                - radio "推荐" [checked]
+                - generic "推荐" [ref=e224]
+              - generic [ref=e225] [cursor=pointer]:
+                - radio "最新"
+                - generic "最新" [ref=e226]
+            - button "筛选" [ref=e228] [cursor=pointer]:
+              - img [ref=e229]:
+                - img [ref=e230]
+              - generic [ref=e232]: 筛选
+          - generic [ref=e234]:
+            - generic [ref=e236] [cursor=pointer]:
+              - img [ref=e238]:
+                - img [ref=e239]:
+                  - img [ref=e240]
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - main [ref=e244]:
+                    - img "头像" [ref=e245]
+                  - emphasis [ref=e247]: 今天活跃
+                - generic [ref=e248]:
+                  - generic [ref=e249]:
+                    - emphasis [ref=e250]: 杨宪杰
+                    - img [ref=e251]:
+                      - img [ref=e252]
+                  - generic [ref=e259]:
+                    - generic "57岁" [ref=e260]
+                    - generic "34年" [ref=e261]
+                    - generic "硕士" [ref=e262]
+                    - generic "潍坊-潍城区" [ref=e263]
+                  - generic [ref=e264]:
+                    - emphasis [ref=e265]: 期望：
+                    - generic "杭州 技术/研发总监 35-40K·13薪" [ref=e266]: 杭州技术/研发总监35-40K·13薪
+                  - generic [ref=e268]: 机械/设备
+              - generic [ref=e270]:
+                - generic [ref=e271]:
+                  - generic [ref=e272]:
+                    - img [ref=e273]:
+                      - img [ref=e274]
+                    - generic [ref=e276]:
+                      - generic "山东驰象机械科技有限公司" [ref=e277]
+                      - emphasis [ref=e278]
+                      - generic [ref=e279]:
+                        - text: 总工程师
+                        - emphasis [ref=e280]
+                        - text: 2018.09-至今(7年6个月)
+                  - generic [ref=e282]:
+                    - generic "广东五星太阳能有限公司" [ref=e283]
+                    - emphasis [ref=e284]
+                    - generic [ref=e285]:
+                      - text: 研究所所长
+                      - emphasis [ref=e286]
+                      - text: 2005.01-2013.01(8年)
+                - generic [ref=e287]:
+                  - generic [ref=e288]:
+                    - img [ref=e289]:
+                      - img [ref=e290]
+                    - generic "中国科学院 · 工程热物理 · 硕士 · 非统招 2001.05-2003.06(2年1个月)" [ref=e292]:
+                      - generic [ref=e293]: 中国科学院
+                      - emphasis [ref=e294]
+                      - generic [ref=e295]:
+                        - text: 工程热物理
+                        - emphasis [ref=e296]
+                        - text: 硕士
+                        - emphasis [ref=e297]
+                        - text: 非统招
+                        - emphasis [ref=e298]
+                        - text: 2001.05-2003.06(2年1个月)
+                  - generic "内蒙古科技大学 · 金属压力加工 · 本科 · 统招 1987.09-1991.06(3年9个月)" [ref=e300]:
+                    - generic [ref=e301]: 内蒙古科技大学
+                    - emphasis [ref=e302]
+                    - generic [ref=e303]:
+                      - text: 金属压力加工
+                      - emphasis [ref=e304]
+                      - text: 本科
+                      - emphasis [ref=e305]
+                      - text: 统招
+                      - emphasis [ref=e306]
+                      - text: 1987.09-1991.06(3年9个月)
+              - button "立即沟通" [ref=e309]:
+                - generic [ref=e310]: 立即沟通
+            - generic [ref=e312] [cursor=pointer]:
+              - img [ref=e314]:
+                - img [ref=e315]:
+                  - img [ref=e316]
+              - generic [ref=e318]:
+                - generic [ref=e319]:
+                  - main [ref=e320]:
+                    - img "头像" [ref=e321]
+                  - emphasis [ref=e323]:
+                    - text: 隐藏
+                    - text: 活跃状态
+                - generic [ref=e324]:
+                  - generic [ref=e325]:
+                    - emphasis [ref=e326]: 郑先生
+                    - img [ref=e327]:
+                      - img [ref=e328]
+                  - generic [ref=e335]:
+                    - generic "44岁" [ref=e336]
+                    - generic "20年" [ref=e337]
+                    - generic "硕士" [ref=e338]
+                    - generic "杭州" [ref=e339]
+                  - generic [ref=e340]:
+                    - emphasis [ref=e341]: 期望：
+                    - generic "青岛 CTO/CIO/技术VP 65-100K·15薪" [ref=e342]: 青岛CTO/CIO/技术VP65-100K·15薪
+                  - generic [ref=e344]: 智能硬件/消费电子
+              - generic [ref=e346]:
+                - generic [ref=e347]:
+                  - generic [ref=e348]:
+                    - img [ref=e349]:
+                      - img [ref=e350]
+                    - generic [ref=e352]:
+                      - generic "某家电公司" [ref=e353]
+                      - emphasis [ref=e354]
+                      - generic [ref=e355]:
+                        - text: 智能化&硬件研发&电控
+                        - emphasis [ref=e356]
+                        - text: 2022.12-至今(3年3个月)
+                  - generic [ref=e358]:
+                    - generic "某500强科技子公司" [ref=e359]
+                    - emphasis [ref=e360]
+                    - generic [ref=e361]:
+                      - text: 副总经理
+                      - emphasis [ref=e362]
+                      - text: 2018.04-2022.10(4年6个月)
+                  - generic [ref=e364]:
+                    - generic "海尔集团创新研究院" [ref=e365]
+                    - emphasis [ref=e366]
+                    - generic [ref=e367]:
+                      - text: 智能负责人&智能硬件leader
+                      - emphasis [ref=e368]
+                      - text: 2016.03-2018.04(2年1个月)
+                - generic [ref=e370]:
+                  - img [ref=e371]:
+                    - img [ref=e372]
+                  - generic "中国海洋大学 · 通信与信息系统 · 硕士 · 统招 2003.09-2006.06(2年9个月)" [ref=e374]:
+                    - generic [ref=e375]: 中国海洋大学
+                    - emphasis [ref=e376]
+                    - generic [ref=e377]:
+                      - text: 通信与信息系统
+                      - emphasis [ref=e378]
+                      - text: 硕士
+                      - emphasis [ref=e379]
+                      - text: 统招
+                      - emphasis [ref=e380]
+                      - text: 2003.09-2006.06(2年9个月)
+              - button "立即沟通" [ref=e383]:
+                - generic [ref=e384]: 立即沟通
+            - generic [ref=e386] [cursor=pointer]:
+              - img [ref=e388]:
+                - img [ref=e389]:
+                  - img [ref=e390]
+              - generic [ref=e392]:
+                - generic [ref=e393]:
+                  - main [ref=e394]:
+                    - img "头像" [ref=e395]
+                  - emphasis [ref=e397]: 今天活跃
+                - generic [ref=e398]:
+                  - generic [ref=e399]:
+                    - emphasis [ref=e400]: 肖志云
+                    - img [ref=e401]:
+                      - img [ref=e402]
+                  - generic [ref=e409]:
+                    - generic "50岁" [ref=e410]
+                    - generic "21年" [ref=e411]
+                    - generic "博士" [ref=e412]
+                    - generic "北京" [ref=e413]
+                  - generic [ref=e414]:
+                    - emphasis [ref=e415]: 期望：
+                    - generic "北京 CTO/CIO/技术VP 80-100K·13薪" [ref=e416]: 北京CTO/CIO/技术VP80-100K·13薪
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: 工业自动化
+                    - generic [ref=e419]: 运营管理
+                    - generic [ref=e420]: 团队管理
+                    - generic [ref=e421]: 公司管理
+                    - generic [ref=e422]: 高级管理
+              - generic [ref=e424]:
+                - generic [ref=e425]:
+                  - generic [ref=e426]:
+                    - img [ref=e427]:
+                      - img [ref=e428]
+                    - generic [ref=e430]:
+                      - generic "厦门蓝旭科技有限公司" [ref=e431]
+                      - emphasis [ref=e432]
+                      - generic [ref=e433]:
+                        - text: CTO首席技术官
+                        - emphasis [ref=e434]
+                        - text: 2023.05-至今(2年10个月)
+                  - generic [ref=e436]:
+                    - generic "现象智能科技(北京)有限公司" [ref=e437]
+                    - emphasis [ref=e438]
+                    - generic [ref=e439]:
+                      - text: 总经理
+                      - emphasis [ref=e440]
+                      - text: 2018.08-2023.05(4年9个月)
+                - generic [ref=e441]:
+                  - generic [ref=e442]:
+                    - img [ref=e443]:
+                      - img [ref=e444]
+                    - generic "南洋理工大学 · 机械与航天工程系 · 博士 · 统招 2001.07-2004.10(3年3个月)" [ref=e446]:
+                      - generic [ref=e447]: 南洋理工大学
+                      - emphasis [ref=e448]
+                      - generic [ref=e449]:
+                        - text: 机械与航天工程系
+                        - emphasis [ref=e450]
+                        - text: 博士
+                        - emphasis [ref=e451]
+                        - text: 统招
+                        - emphasis [ref=e452]
+                        - text: 2001.07-2004.10(3年3个月)
+                  - generic "大连理工大学 · 化工设备与机械系 · 本科 · 统招 1994.09-1998.07(3年10个月)" [ref=e454]:
+                    - generic [ref=e455]: 大连理工大学
+                    - emphasis [ref=e456]
+                    - generic [ref=e457]:
+                      - text: 化工设备与机械系
+                      - emphasis [ref=e458]
+                      - text: 本科
+                      - emphasis [ref=e459]
+                      - text: 统招
+                      - emphasis [ref=e460]
+                      - text: 1994.09-1998.07(3年10个月)
+              - button "立即沟通" [ref=e463]:
+                - generic [ref=e464]: 立即沟通
+            - generic [ref=e466] [cursor=pointer]:
+              - img [ref=e468]:
+                - img [ref=e469]:
+                  - img [ref=e470]
+              - generic [ref=e472]:
+                - generic [ref=e473]:
+                  - main [ref=e474]:
+                    - img "头像" [ref=e475]
+                  - emphasis [ref=e477]: 在线
+                - generic [ref=e478]:
+                  - generic [ref=e479]:
+                    - emphasis [ref=e480]: 马先生
+                    - img [ref=e481]:
+                      - img [ref=e482]
+                  - generic [ref=e489]:
+                    - generic "42岁" [ref=e490]
+                    - generic "16年" [ref=e491]
+                    - generic "硕士" [ref=e492]
+                    - generic "青岛-崂山区" [ref=e493]
+                  - generic [ref=e494]:
+                    - emphasis [ref=e495]: 期望：
+                    - generic "青岛 技术/研发经理 40-80K·14薪" [ref=e496]: 青岛技术/研发经理40-80K·14薪
+                  - generic [ref=e497]:
+                    - generic [ref=e498]: 家电
+                    - generic [ref=e499]: PROE~CAD
+              - generic [ref=e501]:
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - img [ref=e504]:
+                      - img [ref=e505]
+                    - generic [ref=e507]:
+                      - generic "海信视像科技股份有限公司" [ref=e508]
+                      - emphasis [ref=e509]
+                      - generic [ref=e510]:
+                        - text: 结构研发部总经理
+                        - emphasis [ref=e511]
+                        - text: 2024.11-至今(1年4个月)
+                  - generic [ref=e513]:
+                    - generic "海信视像科技股份有限公司" [ref=e514]
+                    - emphasis [ref=e515]
+                    - generic [ref=e516]:
+                      - text: 显示研发部副总经理
+                      - emphasis [ref=e517]
+                      - text: 2023.12-2024.11(11个月)
+                - generic [ref=e518]:
+                  - generic [ref=e519]:
+                    - img [ref=e520]:
+                      - img [ref=e521]
+                    - generic "南京理工大学 · 机械设计制造及自动化 · 硕士 · 统招 2007.08-2009.08(2年)" [ref=e523]:
+                      - generic [ref=e524]: 南京理工大学
+                      - emphasis [ref=e525]
+                      - generic [ref=e526]:
+                        - text: 机械设计制造及自动化
+                        - emphasis [ref=e527]
+                        - text: 硕士
+                        - emphasis [ref=e528]
+                        - text: 统招
+                        - emphasis [ref=e529]
+                        - text: 2007.08-2009.08(2年)
+                  - generic "山东建筑大学 · 机械工程及自动化 · 本科 · 统招 2003.08-2007.08(4年)" [ref=e531]:
+                    - generic [ref=e532]: 山东建筑大学
+                    - emphasis [ref=e533]
+                    - generic [ref=e534]:
+                      - text: 机械工程及自动化
+                      - emphasis [ref=e535]
+                      - text: 本科
+                      - emphasis [ref=e536]
+                      - text: 统招
+                      - emphasis [ref=e537]
+                      - text: 2003.08-2007.08(4年)
+              - button "立即沟通" [ref=e540]:
+                - generic [ref=e541]: 立即沟通
+            - generic [ref=e543] [cursor=pointer]:
+              - img [ref=e545]:
+                - img [ref=e546]:
+                  - img [ref=e547]
+              - generic [ref=e549]:
+                - generic [ref=e550]:
+                  - main [ref=e551]:
+                    - img "头像" [ref=e552]
+                  - emphasis [ref=e554]: 今天活跃
+                - generic [ref=e555]:
+                  - generic [ref=e556]:
+                    - emphasis [ref=e557]: 田先生
+                    - img [ref=e558]:
+                      - img [ref=e559]
+                  - generic [ref=e566]:
+                    - generic "41岁" [ref=e567]
+                    - generic "18年" [ref=e568]
+                    - generic "本科" [ref=e569]
+                    - generic "宁波" [ref=e570]
+                  - generic [ref=e571]:
+                    - emphasis [ref=e572]: 期望：
+                    - generic "上海 技术/研发总监 50-70K·14薪" [ref=e573]: 上海技术/研发总监50-70K·14薪
+                  - generic [ref=e574]:
+                    - generic [ref=e575]: 学术/科研
+                    - generic [ref=e576]: 3s全栈研发
+                    - generic [ref=e577]: 产品线规划
+                    - generic [ref=e578]: 230kwh
+                    - generic [ref=e579]: 372kwh
+              - generic [ref=e581]:
+                - generic [ref=e582]:
+                  - generic [ref=e583]:
+                    - img [ref=e584]:
+                      - img [ref=e585]
+                    - generic [ref=e587]:
+                      - generic "宁波沺沁能源科技有限公司" [ref=e588]
+                      - emphasis [ref=e589]
+                      - generic [ref=e590]:
+                        - text: 产品总监
+                        - emphasis [ref=e591]
+                        - text: 2024.12-至今(1年3个月)
+                  - generic [ref=e593]:
+                    - generic "奥科新能源(浙江)股份有限公司" [ref=e594]
+                    - emphasis [ref=e595]
+                    - generic [ref=e596]:
+                      - text: CTO
+                      - emphasis [ref=e597]
+                      - text: 2022.06-2024.12(2年6个月)
+                  - generic [ref=e599]:
+                    - generic "上海电气风电集团" [ref=e600]
+                    - emphasis [ref=e601]
+                    - generic [ref=e602]:
+                      - text: 储能研发总监
+                      - emphasis [ref=e603]
+                      - text: 2007.07-2022.06(14年11个月)
+                - generic [ref=e605]:
+                  - img [ref=e606]:
+                    - img [ref=e607]
+                  - generic "兰州理工大学 · 电气工程及其自动化 · 本科 · 统招 2003.09-2007.06(3年9个月)" [ref=e609]:
+                    - generic [ref=e610]: 兰州理工大学
+                    - emphasis [ref=e611]
+                    - generic [ref=e612]:
+                      - text: 电气工程及其自动化
+                      - emphasis [ref=e613]
+                      - text: 本科
+                      - emphasis [ref=e614]
+                      - text: 统招
+                      - emphasis [ref=e615]
+                      - text: 2003.09-2007.06(3年9个月)
+              - button "立即沟通" [ref=e618]:
+                - generic [ref=e619]: 立即沟通
+            - generic [ref=e621] [cursor=pointer]:
+              - img [ref=e623]:
+                - img [ref=e624]:
+                  - img [ref=e625]
+              - generic [ref=e627]:
+                - generic [ref=e628]:
+                  - main [ref=e629]:
+                    - img "头像" [ref=e630]
+                  - emphasis [ref=e632]: 今天活跃
+                - generic [ref=e633]:
+                  - generic [ref=e634]:
+                    - emphasis [ref=e635]: 袁先生
+                    - img [ref=e636]:
+                      - img [ref=e637]
+                  - generic [ref=e644]:
+                    - generic "41岁" [ref=e645]
+                    - generic "15年" [ref=e646]
+                    - generic "硕士" [ref=e647]
+                    - generic "潍坊" [ref=e648]
+                  - generic [ref=e649]:
+                    - emphasis [ref=e650]: 期望：
+                    - generic "青岛 技术/研发总监 50-70K" [ref=e651]: 青岛技术/研发总监50-70K
+                  - generic [ref=e652]:
+                    - generic [ref=e653]: 机械/设备
+                    - generic [ref=e654]: 产品设计
+                    - generic [ref=e655]: 技术管理
+                    - generic [ref=e656]: 电控
+                    - generic [ref=e657]: NVH分析
+              - generic [ref=e659]:
+                - generic [ref=e660]:
+                  - generic [ref=e661]:
+                    - img [ref=e662]:
+                      - img [ref=e663]
+                    - generic [ref=e665]:
+                      - generic "潍柴动力股份有限公司" [ref=e666]
+                      - emphasis [ref=e667]
+                      - generic [ref=e668]:
+                        - text: 大缸径发动机应用开发总经理
+                        - emphasis [ref=e669]
+                        - text: 2024.04-至今(1年11个月)
+                  - generic [ref=e671]:
+                    - generic "潍柴动力股份有限公司" [ref=e672]
+                    - emphasis [ref=e673]
+                    - generic [ref=e674]:
+                      - text: 国际应用开发总经理
+                      - emphasis [ref=e675]
+                      - text: 2017.04-2024.04(7年)
+                - generic [ref=e676]:
+                  - generic [ref=e677]:
+                    - img [ref=e678]:
+                      - img [ref=e679]
+                    - generic "大连海事大学 · 工程力学 · 硕士 · 统招 2008.09-2010.07(1年10个月)" [ref=e681]:
+                      - generic [ref=e682]: 大连海事大学
+                      - emphasis [ref=e683]
+                      - generic [ref=e684]:
+                        - text: 工程力学
+                        - emphasis [ref=e685]
+                        - text: 硕士
+                        - emphasis [ref=e686]
+                        - text: 统招
+                        - emphasis [ref=e687]
+                        - text: 2008.09-2010.07(1年10个月)
+                  - generic "大连海事大学 · 轮机工程 · 本科 · 统招 2004.09-2008.06(3年9个月)" [ref=e689]:
+                    - generic [ref=e690]: 大连海事大学
+                    - emphasis [ref=e691]
+                    - generic [ref=e692]:
+                      - text: 轮机工程
+                      - emphasis [ref=e693]
+                      - text: 本科
+                      - emphasis [ref=e694]
+                      - text: 统招
+                      - emphasis [ref=e695]
+                      - text: 2004.09-2008.06(3年9个月)
+              - button "立即沟通" [ref=e698]:
+                - generic [ref=e699]: 立即沟通
+            - generic [ref=e701] [cursor=pointer]:
+              - img [ref=e703]:
+                - img [ref=e704]:
+                  - img [ref=e705]
+              - generic [ref=e707]:
+                - generic [ref=e708]:
+                  - main [ref=e709]:
+                    - img "头像" [ref=e710]
+                  - emphasis [ref=e712]: 今天活跃
+                - generic [ref=e713]:
+                  - generic [ref=e714]:
+                    - emphasis [ref=e715]: 闫先生
+                    - img [ref=e716]:
+                      - img [ref=e717]
+                  - generic [ref=e724]:
+                    - generic "47岁" [ref=e725]
+                    - generic "25年" [ref=e726]
+                    - generic "本科" [ref=e727]
+                    - generic "北京" [ref=e728]
+                  - generic [ref=e729]:
+                    - emphasis [ref=e730]: 期望：
+                    - generic "廊坊 技术/研发总监 30-35K" [ref=e731]: 廊坊技术/研发总监30-35K
+                  - generic [ref=e732]:
+                    - generic [ref=e733]: 互联网
+                    - generic [ref=e734]: 新能源
+                    - generic [ref=e735]: 运营管理
+                    - generic [ref=e736]: 汽车销售
+                    - generic [ref=e737]: 车后市场
+              - generic [ref=e739]:
+                - generic [ref=e740]:
+                  - generic [ref=e741]:
+                    - img [ref=e742]:
+                      - img [ref=e743]
+                    - generic [ref=e745]:
+                      - generic "北京野行者科技有限公司" [ref=e746]
+                      - emphasis [ref=e747]
+                      - generic [ref=e748]:
+                        - text: 技术总监
+                        - emphasis [ref=e749]
+                        - text: 2023.07-至今(2年8个月)
+                  - generic [ref=e751]:
+                    - generic "北京好修养科技有限公司" [ref=e752]
+                    - emphasis [ref=e753]
+                    - generic [ref=e754]:
+                      - text: 技术总监
+                      - emphasis [ref=e755]
+                      - text: 2019.04-2023.06(4年2个月)
+                  - generic [ref=e757]:
+                    - generic "北京中人健康管理有限公司" [ref=e758]
+                    - emphasis [ref=e759]
+                    - generic [ref=e760]:
+                      - text: 技术总监
+                      - emphasis [ref=e761]
+                      - text: 2016.02-2019.02(3年)
+                - generic [ref=e763]:
+                  - img [ref=e764]:
+                    - img [ref=e765]
+                  - generic "河北工业大学 · 计算机科学与技术 · 本科 · 统招 1996.09-2001.07(4年10个月)" [ref=e767]:
+                    - generic [ref=e768]: 河北工业大学
+                    - emphasis [ref=e769]
+                    - generic [ref=e770]:
+                      - text: 计算机科学与技术
+                      - emphasis [ref=e771]
+                      - text: 本科
+                      - emphasis [ref=e772]
+                      - text: 统招
+                      - emphasis [ref=e773]
+                      - text: 1996.09-2001.07(4年10个月)
+              - button "立即沟通" [ref=e776]:
+                - generic [ref=e777]: 立即沟通
+            - generic [ref=e779] [cursor=pointer]:
+              - img [ref=e781]:
+                - img [ref=e782]:
+                  - img [ref=e783]
+              - generic [ref=e785]:
+                - generic [ref=e786]:
+                  - main [ref=e787]:
+                    - img "头像" [ref=e788]
+                  - emphasis [ref=e790]: 今天活跃
+                - generic [ref=e791]:
+                  - generic [ref=e792]:
+                    - emphasis [ref=e793]: 翟建光
+                    - img [ref=e794]:
+                      - img [ref=e795]
+                  - generic [ref=e802]:
+                    - generic "39岁" [ref=e803]
+                    - generic "18年" [ref=e804]
+                    - generic "硕士" [ref=e805]
+                    - generic "深圳" [ref=e806]
+                  - generic [ref=e807]:
+                    - emphasis [ref=e808]: 期望：
+                    - generic "青岛 CTO/CIO/技术VP 100-200K·18薪" [ref=e809]: 青岛CTO/CIO/技术VP100-200K·18薪
+                  - generic [ref=e810]:
+                    - generic [ref=e811]: 电子/半导体/集成电路
+                    - generic [ref=e812]: 团队管理
+                    - generic [ref=e813]: 软硬件技术
+              - generic [ref=e815]:
+                - generic [ref=e816]:
+                  - generic [ref=e817]:
+                    - img [ref=e818]:
+                      - img [ref=e819]
+                    - generic [ref=e821]:
+                      - generic "深圳市当贝科技有限公司" [ref=e822]
+                      - emphasis [ref=e823]
+                      - generic [ref=e824]:
+                        - text: 研发负责人
+                        - emphasis [ref=e825]
+                        - text: 2024.05-至今(1年10个月)
+                  - generic [ref=e827]:
+                    - generic "竹芒/街电" [ref=e828]
+                    - emphasis [ref=e829]
+                    - generic [ref=e830]:
+                      - text: cto首席技术官
+                      - emphasis [ref=e831]
+                      - text: 2022.05-2024.05(2年)
+                - generic [ref=e832]:
+                  - generic [ref=e833]:
+                    - img [ref=e834]:
+                      - img [ref=e835]
+                    - generic "香港都会大学 · MBA · 硕士 · 统招 2021.09-2024.06(2年9个月)" [ref=e837]:
+                      - generic [ref=e838]: 香港都会大学
+                      - emphasis [ref=e839]
+                      - generic [ref=e840]:
+                        - text: MBA
+                        - emphasis [ref=e841]
+                        - text: 硕士
+                        - emphasis [ref=e842]
+                        - text: 统招
+                        - emphasis [ref=e843]
+                        - text: 2021.09-2024.06(2年9个月)
+                  - generic "南京邮电大学 · 计算机科学与技术 · 本科 · 统招 2003.09-2007.07(3年10个月)" [ref=e845]:
+                    - generic [ref=e846]: 南京邮电大学
+                    - emphasis [ref=e847]
+                    - generic [ref=e848]:
+                      - text: 计算机科学与技术
+                      - emphasis [ref=e849]
+                      - text: 本科
+                      - emphasis [ref=e850]
+                      - text: 统招
+                      - emphasis [ref=e851]
+                      - text: 2003.09-2007.07(3年10个月)
+              - button "立即沟通" [ref=e854]:
+                - generic [ref=e855]: 立即沟通
+            - generic [ref=e857] [cursor=pointer]:
+              - img [ref=e859]:
+                - img [ref=e860]:
+                  - img [ref=e861]
+              - generic [ref=e863]:
+                - generic [ref=e864]:
+                  - main [ref=e865]:
+                    - img "头像" [ref=e866]
+                  - emphasis [ref=e868]: 今天活跃
+                - generic [ref=e869]:
+                  - generic [ref=e870]:
+                    - emphasis [ref=e871]: 孔先生
+                    - img [ref=e872]:
+                      - img [ref=e873]
+                  - generic [ref=e880]:
+                    - generic "37岁" [ref=e881]
+                    - generic "15年" [ref=e882]
+                    - generic "本科" [ref=e883]
+                    - generic "青岛-城阳区" [ref=e884]
+                  - generic [ref=e885]:
+                    - emphasis [ref=e886]: 期望：
+                    - generic "青岛 机械产品规划 40-45K·15薪" [ref=e887]: 青岛机械产品规划40-45K·15薪
+                  - generic [ref=e888]:
+                    - generic [ref=e889]: 电子/半导体/集成电路
+                    - generic [ref=e890]: 团队管理经验
+              - generic [ref=e892]:
+                - generic [ref=e893]:
+                  - generic [ref=e894]:
+                    - img [ref=e895]:
+                      - img [ref=e896]
+                    - generic [ref=e898]:
+                      - generic "歌尔" [ref=e899]
+                      - emphasis [ref=e900]
+                      - generic [ref=e901]:
+                        - text: 智能制造中心长
+                        - emphasis [ref=e902]
+                        - text: 2025.12-至今(3个月)
+                  - generic [ref=e904]:
+                    - generic "青岛鼎信通讯股份有限公司" [ref=e905]
+                    - emphasis [ref=e906]
+                    - generic [ref=e907]:
+                      - text: 工艺研发主管
+                      - emphasis [ref=e908]
+                      - text: 2017.06-2025.12(8年6个月)
+                  - generic [ref=e910]:
+                    - generic "青岛科捷机器人有限公司" [ref=e911]
+                    - emphasis [ref=e912]
+                    - generic [ref=e913]:
+                      - text: 机械工程师
+                      - emphasis [ref=e914]
+                      - text: 2015.04-2017.06(2年2个月)
+                - generic [ref=e916]:
+                  - img [ref=e917]:
+                    - img [ref=e918]
+                  - generic "青岛理工大学 · 机械设计制造及其自动化 · 本科 · 统招 2007.09-2011.06(3年9个月)" [ref=e920]:
+                    - generic [ref=e921]: 青岛理工大学
+                    - emphasis [ref=e922]
+                    - generic [ref=e923]:
+                      - text: 机械设计制造及其自动化
+                      - emphasis [ref=e924]
+                      - text: 本科
+                      - emphasis [ref=e925]
+                      - text: 统招
+                      - emphasis [ref=e926]
+                      - text: 2007.09-2011.06(3年9个月)
+              - button "立即沟通" [ref=e929]:
+                - generic [ref=e930]: 立即沟通
+            - generic [ref=e932] [cursor=pointer]:
+              - img [ref=e934]:
+                - img [ref=e935]:
+                  - img [ref=e936]
+              - generic [ref=e938]:
+                - generic [ref=e939]:
+                  - main [ref=e940]:
+                    - img "头像" [ref=e941]
+                  - emphasis [ref=e943]:
+                    - text: 隐藏
+                    - text: 活跃状态
+                - generic [ref=e944]:
+                  - generic [ref=e945]:
+                    - emphasis [ref=e946]: 刁先生
+                    - img [ref=e947]:
+                      - img [ref=e948]
+                  - generic [ref=e955]:
+                    - generic "37岁" [ref=e956]
+                    - generic "12年" [ref=e957]
+                    - generic "硕士" [ref=e958]
+                    - generic "厦门-同安区" [ref=e959]
+                  - generic [ref=e960]:
+                    - emphasis [ref=e961]: 期望：
+                    - generic "青岛 技术/研发经理 60-70K·14薪" [ref=e962]: 青岛技术/研发经理60-70K·14薪
+                  - generic [ref=e963]:
+                    - generic [ref=e964]: 新能源
+                    - generic [ref=e965]: 技术创新
+                    - generic [ref=e966]: 新产品产业化
+                    - generic [ref=e967]: 产业链协同创新
+                    - generic [ref=e968]: 技术组织升级
+              - generic [ref=e970]:
+                - generic [ref=e971]:
+                  - generic [ref=e972]:
+                    - img [ref=e973]:
+                      - img [ref=e974]
+                    - generic [ref=e976]:
+                      - generic "厦门海辰储能科技股份有限公司" [ref=e977]
+                      - emphasis [ref=e978]
+                      - generic [ref=e979]:
+                        - text: 资深经理
+                        - emphasis [ref=e980]
+                        - text: 2022.04-至今(3年11个月)
+                  - generic [ref=e982]:
+                    - generic "远景睿泰动力技术(上海)有限公司" [ref=e983]
+                    - emphasis [ref=e984]
+                    - generic [ref=e985]:
+                      - text: 主任工程师
+                      - emphasis [ref=e986]
+                      - text: 2021.07-2022.04(9个月)
+                - generic [ref=e987]:
+                  - generic [ref=e988]:
+                    - img [ref=e989]:
+                      - img [ref=e990]
+                    - generic "哈尔滨工业大学 · 材料加工 · 硕士 · 统招 2011.09-2014.01(2年4个月)" [ref=e992]:
+                      - generic [ref=e993]: 哈尔滨工业大学
+                      - emphasis [ref=e994]
+                      - generic [ref=e995]:
+                        - text: 材料加工
+                        - emphasis [ref=e996]
+                        - text: 硕士
+                        - emphasis [ref=e997]
+                        - text: 统招
+                        - emphasis [ref=e998]
+                        - text: 2011.09-2014.01(2年4个月)
+                  - generic "烟台大学 · 材料科学与工程 · 本科 · 统招 2007.09-2011.07(3年10个月)" [ref=e1000]:
+                    - generic [ref=e1001]: 烟台大学
+                    - emphasis [ref=e1002]
+                    - generic [ref=e1003]:
+                      - text: 材料科学与工程
+                      - emphasis [ref=e1004]
+                      - text: 本科
+                      - emphasis [ref=e1005]
+                      - text: 统招
+                      - emphasis [ref=e1006]
+                      - text: 2007.09-2011.07(3年10个月)
+              - button "立即沟通" [ref=e1009]:
+                - generic [ref=e1010]: 立即沟通
+            - generic [ref=e1012] [cursor=pointer]:
+              - img [ref=e1014]:
+                - img [ref=e1015]:
+                  - img [ref=e1016]
+              - generic [ref=e1018]:
+                - generic [ref=e1019]:
+                  - main [ref=e1020]:
+                    - img "头像" [ref=e1021]
+                  - emphasis [ref=e1023]: 今天活跃
+                - generic [ref=e1024]:
+                  - generic [ref=e1025]:
+                    - emphasis [ref=e1026]: 王先生
+                    - img [ref=e1027]:
+                      - img [ref=e1028]
+                  - generic [ref=e1035]:
+                    - generic "38岁" [ref=e1036]
+                    - generic "13年" [ref=e1037]
+                    - generic "硕士" [ref=e1038]
+                    - generic "青岛" [ref=e1039]
+                  - generic [ref=e1040]:
+                    - emphasis [ref=e1041]: 期望：
+                    - generic "青岛 技术/研发总监 70-90K·14薪" [ref=e1042]: 青岛技术/研发总监70-90K·14薪
+                  - generic [ref=e1043]:
+                    - generic [ref=e1044]: 家电
+                    - generic [ref=e1045]: 研发创新能力
+                    - generic [ref=e1046]: 研发管理
+                    - generic [ref=e1047]: 团队管理经验
+                    - generic [ref=e1048]: 产品管理
+              - generic [ref=e1050]:
+                - generic [ref=e1051]:
+                  - generic [ref=e1052]:
+                    - img [ref=e1053]:
+                      - img [ref=e1054]
+                    - generic [ref=e1056]:
+                      - generic "某净水科技公司" [ref=e1057]
+                      - emphasis [ref=e1058]
+                      - generic [ref=e1059]:
+                        - text: 副总
+                        - emphasis [ref=e1060]
+                        - text: 2022.03-至今(4年)
+                  - generic [ref=e1062]:
+                    - generic "瑞纳智能" [ref=e1063]
+                    - emphasis [ref=e1064]
+                    - generic [ref=e1065]:
+                      - text: 孵化项目副总
+                      - emphasis [ref=e1066]
+                      - text: 2020.05-2022.03(1年10个月)
+                  - generic [ref=e1068]:
+                    - generic "青岛海尔智慧厨房电器有限公司" [ref=e1069]
+                    - emphasis [ref=e1070]
+                    - generic [ref=e1071]:
+                      - text: 研发副部长-厨电产品技术管理/超前研发
+                      - emphasis [ref=e1072]
+                      - text: 2018.07-2020.05(1年10个月)
+                - generic [ref=e1074]:
+                  - img [ref=e1075]:
+                    - img [ref=e1076]
+                  - generic "山东科技大学 · 机电工程 · 硕士 · 统招 2009.09-2012.07(2年10个月)" [ref=e1078]:
+                    - generic [ref=e1079]: 山东科技大学
+                    - emphasis [ref=e1080]
+                    - generic [ref=e1081]:
+                      - text: 机电工程
+                      - emphasis [ref=e1082]
+                      - text: 硕士
+                      - emphasis [ref=e1083]
+                      - text: 统招
+                      - emphasis [ref=e1084]
+                      - text: 2009.09-2012.07(2年10个月)
+              - button "立即沟通" [ref=e1087]:
+                - generic [ref=e1088]: 立即沟通
+            - generic [ref=e1090] [cursor=pointer]:
+              - img [ref=e1092]:
+                - img [ref=e1093]:
+                  - img [ref=e1094]
+              - generic [ref=e1096]:
+                - generic [ref=e1097]:
+                  - main [ref=e1098]:
+                    - img "头像" [ref=e1099]
+                  - emphasis [ref=e1101]: 今天活跃
+                - generic [ref=e1102]:
+                  - generic [ref=e1103]:
+                    - emphasis [ref=e1104]: 柳先生
+                    - img [ref=e1105]:
+                      - img [ref=e1106]
+                  - generic [ref=e1113]:
+                    - generic "48岁" [ref=e1114]
+                    - generic "24年" [ref=e1115]
+                    - generic "硕士" [ref=e1116]
+                    - generic "北京" [ref=e1117]
+                  - generic [ref=e1118]:
+                    - emphasis [ref=e1119]: 期望：
+                    - generic "北京 技术/研发总监 50-80K·15薪" [ref=e1120]: 北京技术/研发总监50-80K·15薪
+                  - generic [ref=e1121]:
+                    - generic [ref=e1122]: 制药
+                    - generic [ref=e1123]: 6-10年管理经验
+              - generic [ref=e1125]:
+                - generic [ref=e1126]:
+                  - generic [ref=e1127]:
+                    - img [ref=e1128]:
+                      - img [ref=e1129]
+                    - generic [ref=e1131]:
+                      - generic "云南白药集团股份有限公司" [ref=e1132]
+                      - emphasis [ref=e1133]
+                      - generic [ref=e1134]:
+                        - text: 数字化总监
+                        - emphasis [ref=e1135]
+                        - text: 2018.06-至今(7年9个月)
+                  - generic [ref=e1137]:
+                    - generic "北京爱和健康科技有限公司" [ref=e1138]
+                    - emphasis [ref=e1139]
+                    - generic [ref=e1140]:
+                      - text: 技术总监/CTO
+                      - emphasis [ref=e1141]
+                      - text: 2017.03-2018.06(1年3个月)
+                - generic [ref=e1142]:
+                  - generic [ref=e1143]:
+                    - img [ref=e1144]:
+                      - img [ref=e1145]
+                    - generic "首都经济贸易大学 · 企业管理 · 硕士 · 非统招 2010.09-2013.07(2年10个月)" [ref=e1147]:
+                      - generic [ref=e1148]: 首都经济贸易大学
+                      - emphasis [ref=e1149]
+                      - generic [ref=e1150]:
+                        - text: 企业管理
+                        - emphasis [ref=e1151]
+                        - text: 硕士
+                        - emphasis [ref=e1152]
+                        - text: 非统招
+                        - emphasis [ref=e1153]
+                        - text: 2010.09-2013.07(2年10个月)
+                  - generic "北京信息科技大学 · 计算机软件 · 本科 · 统招 1997.09-2001.07(3年10个月)" [ref=e1155]:
+                    - generic [ref=e1156]: 北京信息科技大学
+                    - emphasis [ref=e1157]
+                    - generic [ref=e1158]:
+                      - text: 计算机软件
+                      - emphasis [ref=e1159]
+                      - text: 本科
+                      - emphasis [ref=e1160]
+                      - text: 统招
+                      - emphasis [ref=e1161]
+                      - text: 1997.09-2001.07(3年10个月)
+              - button "立即沟通" [ref=e1164]:
+                - generic [ref=e1165]: 立即沟通
+            - generic [ref=e1167] [cursor=pointer]:
+              - img [ref=e1169]:
+                - img [ref=e1170]:
+                  - img [ref=e1171]
+              - generic [ref=e1173]:
+                - generic [ref=e1174]:
+                  - main [ref=e1175]:
+                    - img "头像" [ref=e1176]
+                  - emphasis [ref=e1178]: 今天活跃
+                - generic [ref=e1179]:
+                  - generic [ref=e1180]:
+                    - emphasis [ref=e1181]: 邵先生
+                    - img [ref=e1182]:
+                      - img [ref=e1183]
+                  - generic [ref=e1190]:
+                    - generic "51岁" [ref=e1191]
+                    - generic "29年" [ref=e1192]
+                    - generic "本科" [ref=e1193]
+                    - generic "烟台" [ref=e1194]
+                  - generic [ref=e1195]:
+                    - emphasis [ref=e1196]: 期望：
+                    - generic "烟台 技术/研发经理 25-40K·16薪" [ref=e1197]: 烟台技术/研发经理25-40K·16薪
+                  - generic [ref=e1198]:
+                    - generic [ref=e1199]: 互联网
+                    - generic [ref=e1200]: 团队管理经验
+              - generic [ref=e1202]:
+                - generic [ref=e1203]:
+                  - generic [ref=e1204]:
+                    - img [ref=e1205]:
+                      - img [ref=e1206]
+                    - generic [ref=e1208]:
+                      - generic "东方电子" [ref=e1209]
+                      - emphasis [ref=e1210]
+                      - generic [ref=e1211]:
+                        - text: 海外事业部总工
+                        - emphasis [ref=e1212]
+                        - text: 2023.04-至今(2年11个月)
+                  - generic [ref=e1214]:
+                    - generic "东方电子股份有限公司" [ref=e1215]
+                    - emphasis [ref=e1216]
+                    - generic [ref=e1217]:
+                      - text: 硬件总架构师
+                      - emphasis [ref=e1218]
+                      - text: 2016.05-2023.04(6年11个月)
+                  - generic [ref=e1220]:
+                    - generic "东方电子股份有限公司" [ref=e1221]
+                    - emphasis [ref=e1222]
+                    - generic [ref=e1223]:
+                      - text: 平台室主任
+                      - emphasis [ref=e1224]
+                      - text: 2012.10-2016.05(3年7个月)
+                - generic [ref=e1226]:
+                  - img [ref=e1227]:
+                    - img [ref=e1228]
+                  - generic "合肥工业大学 · 应用电子技术 · 本科 · 统招 1994.09-1998.07(3年10个月)" [ref=e1230]:
+                    - generic [ref=e1231]: 合肥工业大学
+                    - emphasis [ref=e1232]
+                    - generic [ref=e1233]:
+                      - text: 应用电子技术
+                      - emphasis [ref=e1234]
+                      - text: 本科
+                      - emphasis [ref=e1235]
+                      - text: 统招
+                      - emphasis [ref=e1236]
+                      - text: 1994.09-1998.07(3年10个月)
+              - button "立即沟通" [ref=e1239]:
+                - generic [ref=e1240]: 立即沟通
+            - generic [ref=e1242] [cursor=pointer]:
+              - img [ref=e1244]:
+                - img [ref=e1245]:
+                  - img [ref=e1246]
+              - generic [ref=e1248]:
+                - generic [ref=e1249]:
+                  - main [ref=e1250]:
+                    - img "头像" [ref=e1251]
+                  - emphasis [ref=e1253]: 今天活跃
+                - generic [ref=e1254]:
+                  - generic [ref=e1255]:
+                    - emphasis [ref=e1256]: 曹扬
+                    - img [ref=e1257]:
+                      - img [ref=e1258]
+                  - generic [ref=e1265]:
+                    - generic "44岁" [ref=e1266]
+                    - generic "17年" [ref=e1267]
+                    - generic "硕士" [ref=e1268]
+                    - generic "东莞" [ref=e1269]
+                  - generic [ref=e1270]:
+                    - emphasis [ref=e1271]: 期望：
+                    - generic "深圳 电控工程师 30-50K·14薪" [ref=e1272]: 深圳电控工程师30-50K·14薪
+                  - generic [ref=e1273]:
+                    - generic [ref=e1274]: 智能硬件/消费电子
+                    - generic [ref=e1275]: 动力系统设计
+                    - generic [ref=e1276]: matlab
+                    - generic [ref=e1277]: simulink
+                    - generic [ref=e1278]: 电驱动系统集成
+              - generic [ref=e1280]:
+                - generic [ref=e1281]:
+                  - generic [ref=e1282]:
+                    - img [ref=e1283]:
+                      - img [ref=e1284]
+                    - generic [ref=e1286]:
+                      - generic "乐骑智能" [ref=e1287]
+                      - emphasis [ref=e1288]
+                      - generic [ref=e1289]:
+                        - text: 研发经理
+                        - emphasis [ref=e1290]
+                        - text: 2025.02-至今(1年1个月)
+                  - generic [ref=e1292]:
+                    - generic "东莞鸿霖车业有限公司" [ref=e1293]
+                    - emphasis [ref=e1294]
+                    - generic [ref=e1295]:
+                      - text: 副理
+                      - emphasis [ref=e1296]
+                      - text: 2023.07-2024.12(1年5个月)
+                - generic [ref=e1297]:
+                  - generic [ref=e1298]:
+                    - img [ref=e1299]:
+                      - img [ref=e1300]
+                    - generic "台湾大学 · 机械工程所自动控制组 · 硕士 · 统招 2012.09-2016.06(3年9个月)" [ref=e1302]:
+                      - generic [ref=e1303]: 台湾大学
+                      - emphasis [ref=e1304]
+                      - generic [ref=e1305]:
+                        - text: 机械工程所自动控制组
+                        - emphasis [ref=e1306]
+                        - text: 硕士
+                        - emphasis [ref=e1307]
+                        - text: 统招
+                        - emphasis [ref=e1308]
+                        - text: 2012.09-2016.06(3年9个月)
+                  - generic "台湾大学 · 机械工程学系 · 本科 · 统招 2000.09-2004.06(3年9个月)" [ref=e1310]:
+                    - generic [ref=e1311]: 台湾大学
+                    - emphasis [ref=e1312]
+                    - generic [ref=e1313]:
+                      - text: 机械工程学系
+                      - emphasis [ref=e1314]
+                      - text: 本科
+                      - emphasis [ref=e1315]
+                      - text: 统招
+                      - emphasis [ref=e1316]
+                      - text: 2000.09-2004.06(3年9个月)
+              - button "立即沟通" [ref=e1319]:
+                - generic [ref=e1320]: 立即沟通
+            - generic [ref=e1322] [cursor=pointer]:
+              - img [ref=e1324]:
+                - img [ref=e1325]:
+                  - img [ref=e1326]
+              - generic [ref=e1328]:
+                - generic [ref=e1329]:
+                  - main [ref=e1330]:
+                    - img "头像" [ref=e1331]
+                  - emphasis [ref=e1333]: 今天活跃
+                - generic [ref=e1334]:
+                  - generic [ref=e1335]:
+                    - emphasis [ref=e1336]: 巩长义
+                    - img [ref=e1337]:
+                      - img [ref=e1338]
+                  - generic [ref=e1345]:
+                    - generic "50岁" [ref=e1346]
+                    - generic "23年" [ref=e1347]
+                    - generic "硕士" [ref=e1348]
+                    - generic "青岛-城阳区" [ref=e1349]
+                  - generic [ref=e1350]:
+                    - emphasis [ref=e1351]: 期望：
+                    - generic "青岛 技术/研发总监 20-40K" [ref=e1352]: 青岛技术/研发总监20-40K
+                  - generic [ref=e1353]:
+                    - generic [ref=e1354]: 互联网
+                    - generic [ref=e1355]: 20年软件经验
+                    - generic [ref=e1356]: 发展规划
+                    - generic [ref=e1357]: 团队管理
+                    - generic [ref=e1358]: 沟通能力
+              - generic [ref=e1360]:
+                - generic [ref=e1361]:
+                  - generic [ref=e1362]:
+                    - img [ref=e1363]:
+                      - img [ref=e1364]
+                    - generic [ref=e1366]:
+                      - generic "美瑞泰" [ref=e1367]
+                      - emphasis [ref=e1368]
+                      - generic [ref=e1369]:
+                        - text: 产品总监
+                        - emphasis [ref=e1370]
+                        - text: 2025.11-至今(4个月)
+                  - generic [ref=e1372]:
+                    - generic "Fisher & Paykel Appliances (Qingdao)" [ref=e1373]
+                    - emphasis [ref=e1374]
+                    - generic [ref=e1375]:
+                      - text: Electronics Leader
+                      - emphasis [ref=e1376]
+                      - text: 2022.11-至今(3年4个月)
+                - generic [ref=e1377]:
+                  - generic [ref=e1378]:
+                    - img [ref=e1379]:
+                      - img [ref=e1380]
+                    - generic "新疆大学 · 通信与信息系统 · 硕士 · 统招 2000.09-2003.07(2年10个月)" [ref=e1382]:
+                      - generic [ref=e1383]: 新疆大学
+                      - emphasis [ref=e1384]
+                      - generic [ref=e1385]:
+                        - text: 通信与信息系统
+                        - emphasis [ref=e1386]
+                        - text: 硕士
+                        - emphasis [ref=e1387]
+                        - text: 统招
+                        - emphasis [ref=e1388]
+                        - text: 2000.09-2003.07(2年10个月)
+                  - generic "曲阜师范大学 · 应用电子技术 · 本科 · 统招 1996.09-2000.07(3年10个月)" [ref=e1390]:
+                    - generic [ref=e1391]: 曲阜师范大学
+                    - emphasis [ref=e1392]
+                    - generic [ref=e1393]:
+                      - text: 应用电子技术
+                      - emphasis [ref=e1394]
+                      - text: 本科
+                      - emphasis [ref=e1395]
+                      - text: 统招
+                      - emphasis [ref=e1396]
+                      - text: 1996.09-2000.07(3年10个月)
+              - button "立即沟通" [ref=e1399]:
+                - generic [ref=e1400]: 立即沟通
+            - generic [ref=e1402] [cursor=pointer]:
+              - img [ref=e1404]:
+                - img [ref=e1405]:
+                  - img [ref=e1406]
+              - generic [ref=e1408]:
+                - generic [ref=e1409]:
+                  - main [ref=e1410]:
+                    - img "头像" [ref=e1411]
+                  - emphasis [ref=e1413]: 3天内活跃
+                - generic [ref=e1414]:
+                  - generic [ref=e1415]:
+                    - emphasis [ref=e1416]: 张群豹
+                    - img [ref=e1417]:
+                      - img [ref=e1418]
+                  - generic [ref=e1425]:
+                    - generic "43岁" [ref=e1426]
+                    - generic "21年" [ref=e1427]
+                    - generic "本科" [ref=e1428]
+                    - generic "深圳" [ref=e1429]
+                  - generic [ref=e1430]:
+                    - emphasis [ref=e1431]: 期望：
+                    - generic "青岛 技术/研发总监 60-80K·13薪" [ref=e1432]: 青岛技术/研发总监60-80K·13薪
+                  - generic [ref=e1433]:
+                    - generic [ref=e1434]: 物联网
+                    - generic [ref=e1435]: 团队管理经验
+                    - generic [ref=e1436]: 海外工作经验
+              - generic [ref=e1438]:
+                - generic [ref=e1439]:
+                  - generic [ref=e1440]:
+                    - img [ref=e1441]:
+                      - img [ref=e1442]
+                    - generic [ref=e1444]:
+                      - generic "佛山云米科技有限公司" [ref=e1445]
+                      - emphasis [ref=e1446]
+                      - generic [ref=e1447]:
+                        - text: 研发总监
+                        - emphasis [ref=e1448]
+                        - text: 2023.10-至今(2年5个月)
+                  - generic [ref=e1450]:
+                    - generic "深圳安吉尔饮水产业集团有限公司" [ref=e1451]
+                    - emphasis [ref=e1452]
+                    - generic [ref=e1453]:
+                      - text: 研发中心商用产品开发研发总监
+                      - emphasis [ref=e1454]
+                      - text: 2019.07-2023.08(4年1个月)
+                - generic [ref=e1455]:
+                  - generic [ref=e1456]:
+                    - img [ref=e1457]:
+                      - img [ref=e1458]
+                    - generic "青岛科技大学 · 机械制造与自动化 · 本科 · 非统招 2013.09-2016.02(2年5个月)" [ref=e1460]:
+                      - generic [ref=e1461]: 青岛科技大学
+                      - emphasis [ref=e1462]
+                      - generic [ref=e1463]:
+                        - text: 机械制造与自动化
+                        - emphasis [ref=e1464]
+                        - text: 本科
+                        - emphasis [ref=e1465]
+                        - text: 非统招
+                        - emphasis [ref=e1466]
+                        - text: 2013.09-2016.02(2年5个月)
+                  - generic "青岛科技大学 · 楼宇电气管理 · 大专 · 统招 2001.09-2004.07(2年10个月)" [ref=e1468]:
+                    - generic [ref=e1469]: 青岛科技大学
+                    - emphasis [ref=e1470]
+                    - generic [ref=e1471]:
+                      - text: 楼宇电气管理
+                      - emphasis [ref=e1472]
+                      - text: 大专
+                      - emphasis [ref=e1473]
+                      - text: 统招
+                      - emphasis [ref=e1474]
+                      - text: 2001.09-2004.07(2年10个月)
+              - button "立即沟通" [ref=e1477]:
+                - generic [ref=e1478]: 立即沟通
+            - generic [ref=e1480] [cursor=pointer]:
+              - img [ref=e1482]:
+                - img [ref=e1483]:
+                  - img [ref=e1484]
+              - generic [ref=e1486]:
+                - generic [ref=e1487]:
+                  - main [ref=e1488]:
+                    - img "头像" [ref=e1489]
+                  - emphasis [ref=e1491]: 今天活跃
+                - generic [ref=e1492]:
+                  - generic [ref=e1493]:
+                    - emphasis [ref=e1494]: 朱先生
+                    - img [ref=e1495]:
+                      - img [ref=e1496]
+                  - generic [ref=e1503]:
+                    - generic "36岁" [ref=e1504]
+                    - generic "3年" [ref=e1505]
+                    - generic "博士" [ref=e1506]
+                    - generic "镇江" [ref=e1507]
+                  - generic [ref=e1508]:
+                    - emphasis [ref=e1509]: 期望：
+                    - generic "青岛 化工研发 29-35K" [ref=e1510]: 青岛化工研发29-35K
+                  - generic [ref=e1512]: 新材料
+              - generic [ref=e1514]:
+                - generic [ref=e1515]:
+                  - generic [ref=e1516]:
+                    - img [ref=e1517]:
+                      - img [ref=e1518]
+                    - generic [ref=e1520]:
+                      - generic "镇江原轼新型材料有限公司" [ref=e1521]
+                      - emphasis [ref=e1522]
+                      - generic [ref=e1523]:
+                        - text: 研发总监（钨丝事业部）
+                        - emphasis [ref=e1524]
+                        - text: 2023.02-2026.01(2年11个月)
+                  - generic [ref=e1526]:
+                    - generic "镇江原轼新型材料有限公司" [ref=e1527]
+                    - emphasis [ref=e1528]
+                    - generic [ref=e1529]:
+                      - text: 细丝研发经理
+                      - emphasis [ref=e1530]
+                      - text: 2023.11-2024.07(8个月)
+                - generic [ref=e1531]:
+                  - generic [ref=e1532]:
+                    - img [ref=e1533]:
+                      - img [ref=e1534]
+                    - generic "大连理工大学 · 应用化学 · 博士 · 统招 2015.09-2023.03(7年6个月)" [ref=e1536]:
+                      - generic [ref=e1537]: 大连理工大学
+                      - emphasis [ref=e1538]
+                      - generic [ref=e1539]:
+                        - text: 应用化学
+                        - emphasis [ref=e1540]
+                        - text: 博士
+                        - emphasis [ref=e1541]
+                        - text: 统招
+                        - emphasis [ref=e1542]
+                        - text: 2015.09-2023.03(7年6个月)
+                  - generic "南通大学 · 应用化学 · 本科 · 统招 2009.09-2013.06(3年9个月)" [ref=e1544]:
+                    - generic [ref=e1545]: 南通大学
+                    - emphasis [ref=e1546]
+                    - generic [ref=e1547]:
+                      - text: 应用化学
+                      - emphasis [ref=e1548]
+                      - text: 本科
+                      - emphasis [ref=e1549]
+                      - text: 统招
+                      - emphasis [ref=e1550]
+                      - text: 2009.09-2013.06(3年9个月)
+              - button "立即沟通" [ref=e1553]:
+                - generic [ref=e1554]: 立即沟通
+            - generic [ref=e1556] [cursor=pointer]:
+              - img [ref=e1558]:
+                - img [ref=e1559]:
+                  - img [ref=e1560]
+              - generic [ref=e1562]:
+                - generic [ref=e1563]:
+                  - main [ref=e1564]:
+                    - img "头像" [ref=e1565]
+                  - emphasis [ref=e1567]: 今天活跃
+                - generic [ref=e1568]:
+                  - generic [ref=e1569]:
+                    - emphasis [ref=e1570]: 韩先生
+                    - img [ref=e1571]:
+                      - img [ref=e1572]
+                  - generic [ref=e1579]:
+                    - generic "37岁" [ref=e1580]
+                    - generic "11年" [ref=e1581]
+                    - generic "硕士" [ref=e1582]
+                    - generic "潍坊" [ref=e1583]
+                  - generic [ref=e1584]:
+                    - emphasis [ref=e1585]: 期望：
+                    - generic "青岛 机械结构工程师 20-40K·16薪" [ref=e1586]: 青岛机械结构工程师20-40K·16薪
+                  - generic [ref=e1587]:
+                    - generic [ref=e1588]: 电子/半导体/集成电路
+                    - generic [ref=e1589]: 有责任心
+                    - generic [ref=e1590]: 创新
+                    - generic [ref=e1591]: 解决问题
+                    - generic [ref=e1592]: 积极主动
+              - generic [ref=e1594]:
+                - generic [ref=e1596]:
+                  - img [ref=e1597]:
+                    - img [ref=e1598]
+                  - generic [ref=e1600]:
+                    - generic "歌尔股份有限公司" [ref=e1601]
+                    - emphasis [ref=e1602]
+                    - generic [ref=e1603]:
+                      - text: 结构工程师TL
+                      - emphasis [ref=e1604]
+                      - text: 2014.10-至今(11年5个月)
+                - generic [ref=e1605]:
+                  - generic [ref=e1606]:
+                    - img [ref=e1607]:
+                      - img [ref=e1608]
+                    - generic "华中科技大学 · 材料科学与工程 · 硕士 · 统招 2011.09-2014.06(2年9个月)" [ref=e1610]:
+                      - generic [ref=e1611]: 华中科技大学
+                      - emphasis [ref=e1612]
+                      - generic [ref=e1613]:
+                        - text: 材料科学与工程
+                        - emphasis [ref=e1614]
+                        - text: 硕士
+                        - emphasis [ref=e1615]
+                        - text: 统招
+                        - emphasis [ref=e1616]
+                        - text: 2011.09-2014.06(2年9个月)
+                  - generic "烟台大学 · 材料科学与工程 · 本科 · 统招 2007.09-2011.06(3年9个月)" [ref=e1618]:
+                    - generic [ref=e1619]: 烟台大学
+                    - emphasis [ref=e1620]
+                    - generic [ref=e1621]:
+                      - text: 材料科学与工程
+                      - emphasis [ref=e1622]
+                      - text: 本科
+                      - emphasis [ref=e1623]
+                      - text: 统招
+                      - emphasis [ref=e1624]
+                      - text: 2007.09-2011.06(3年9个月)
+              - button "立即沟通" [ref=e1627]:
+                - generic [ref=e1628]: 立即沟通
+            - generic [ref=e1630] [cursor=pointer]:
+              - img [ref=e1632]:
+                - img [ref=e1633]:
+                  - img [ref=e1634]
+              - generic [ref=e1636]:
+                - generic [ref=e1637]:
+                  - main [ref=e1638]:
+                    - img "头像" [ref=e1639]
+                  - emphasis [ref=e1641]: 在线
+                - generic [ref=e1642]:
+                  - generic [ref=e1643]:
+                    - emphasis [ref=e1644]: 魏海朝
+                    - img [ref=e1645]:
+                      - img [ref=e1646]
+                  - generic [ref=e1653]:
+                    - generic "43岁" [ref=e1654]
+                    - generic "19年" [ref=e1655]
+                    - generic "本科" [ref=e1656]
+                    - generic "保定-莲池区" [ref=e1657]
+                  - generic [ref=e1658]:
+                    - emphasis [ref=e1659]: 期望：
+                    - generic "重庆 技术/研发经理 22-40K·14薪" [ref=e1660]: 重庆技术/研发经理22-40K·14薪
+                  - generic [ref=e1661]:
+                    - generic [ref=e1662]: 汽车零部件及配件
+                    - generic [ref=e1663]: 团队管理经验
+              - generic [ref=e1665]:
+                - generic [ref=e1666]:
+                  - generic [ref=e1667]:
+                    - img [ref=e1668]:
+                      - img [ref=e1669]
+                    - generic [ref=e1671]:
+                      - generic "保定苏博汽车零件制造有限公司" [ref=e1672]
+                      - emphasis [ref=e1673]
+                      - generic [ref=e1674]:
+                        - text: 技术部长
+                        - emphasis [ref=e1675]
+                        - text: 2024.08-至今(1年7个月)
+                  - generic [ref=e1677]:
+                    - generic "水星科瑞尔(青岛)汽车部件有限公司" [ref=e1678]
+                    - emphasis [ref=e1679]
+                    - generic [ref=e1680]:
+                      - text: 技术部长
+                      - emphasis [ref=e1681]
+                      - text: 2019.03-2024.08(5年5个月)
+                - generic [ref=e1682]:
+                  - generic [ref=e1683]:
+                    - img [ref=e1684]:
+                      - img [ref=e1685]
+                    - generic "青岛农业大学 · 机械设计制造及自动化 · 本科 · 非统招 2021.09-2025.06(3年9个月)" [ref=e1687]:
+                      - generic [ref=e1688]: 青岛农业大学
+                      - emphasis [ref=e1689]
+                      - generic [ref=e1690]:
+                        - text: 机械设计制造及自动化
+                        - emphasis [ref=e1691]
+                        - text: 本科
+                        - emphasis [ref=e1692]
+                        - text: 非统招
+                        - emphasis [ref=e1693]
+                        - text: 2021.09-2025.06(3年9个月)
+                  - generic "河南工学院 · 机械设计制造及其自动化 · 大专 · 统招 2004.09-2007.07(2年10个月)" [ref=e1695]:
+                    - generic [ref=e1696]: 河南工学院
+                    - emphasis [ref=e1697]
+                    - generic [ref=e1698]:
+                      - text: 机械设计制造及其自动化
+                      - emphasis [ref=e1699]
+                      - text: 大专
+                      - emphasis [ref=e1700]
+                      - text: 统招
+                      - emphasis [ref=e1701]
+                      - text: 2004.09-2007.07(2年10个月)
+              - button "立即沟通" [ref=e1704]:
+                - generic [ref=e1705]: 立即沟通
+            - generic [ref=e1707] [cursor=pointer]:
+              - img [ref=e1709]:
+                - img [ref=e1710]:
+                  - img [ref=e1711]
+              - generic [ref=e1713]:
+                - generic [ref=e1714]:
+                  - main [ref=e1715]:
+                    - img "头像" [ref=e1716]
+                  - emphasis [ref=e1718]: 今天活跃
+                - generic [ref=e1719]:
+                  - generic [ref=e1720]:
+                    - emphasis [ref=e1721]: 宋阳
+                    - img [ref=e1722]:
+                      - img [ref=e1723]
+                  - generic [ref=e1730]:
+                    - generic "40岁" [ref=e1731]
+                    - generic "14年" [ref=e1732]
+                    - generic "硕士" [ref=e1733]
+                    - generic "青岛" [ref=e1734]
+                  - generic [ref=e1735]:
+                    - emphasis [ref=e1736]: 期望：
+                    - generic "青岛 技术/研发总监 30-60K" [ref=e1737]: 青岛技术/研发总监30-60K
+                  - generic [ref=e1738]:
+                    - generic [ref=e1739]: 轨道交通/船舶设备
+                    - generic [ref=e1740]: 电气自动化
+                    - generic [ref=e1741]: 智能制造
+                    - generic [ref=e1742]: 智能运维
+                    - generic [ref=e1743]: 软件工程
+              - generic [ref=e1745]:
+                - generic [ref=e1747]:
+                  - img [ref=e1748]:
+                    - img [ref=e1749]
+                  - generic [ref=e1751]:
+                    - generic "中车青岛四方车辆研究所有限公司" [ref=e1752]
+                    - emphasis [ref=e1753]
+                    - generic [ref=e1754]:
+                      - text: 研发主管
+                      - emphasis [ref=e1755]
+                      - text: 2012.09-至今(13年6个月)
+                - generic [ref=e1756]:
+                  - generic [ref=e1757]:
+                    - img [ref=e1758]:
+                      - img [ref=e1759]
+                    - generic "大连交通大学 · 机械电子工程 · 硕士 · 统招 2008.09-2011.06(2年9个月)" [ref=e1761]:
+                      - generic [ref=e1762]: 大连交通大学
+                      - emphasis [ref=e1763]
+                      - generic [ref=e1764]:
+                        - text: 机械电子工程
+                        - emphasis [ref=e1765]
+                        - text: 硕士
+                        - emphasis [ref=e1766]
+                        - text: 统招
+                        - emphasis [ref=e1767]
+                        - text: 2008.09-2011.06(2年9个月)
+                  - generic "大连交通大学 · 测控技术与仪器 · 本科 · 统招 2005.09-2009.06(3年9个月)" [ref=e1769]:
+                    - generic [ref=e1770]: 大连交通大学
+                    - emphasis [ref=e1771]
+                    - generic [ref=e1772]:
+                      - text: 测控技术与仪器
+                      - emphasis [ref=e1773]
+                      - text: 本科
+                      - emphasis [ref=e1774]
+                      - text: 统招
+                      - emphasis [ref=e1775]
+                      - text: 2005.09-2009.06(3年9个月)
+              - button "立即沟通" [ref=e1778]:
+                - generic [ref=e1779]: 立即沟通
+            - generic [ref=e1782]: 正在加载中，请稍后···
+  - generic [ref=e1783] [cursor=pointer]:
+    - img [ref=e1784]
+    - emphasis [ref=e1787]: "1"
+  - tooltip "close 你有2条未读通知 点击查看" [ref=e1790]:
+    - generic [ref=e1792]:
+      - button "close" [ref=e1793] [cursor=pointer]:
+        - img "close" [ref=e1794]:
+          - img [ref=e1795]
+      - img [ref=e1797]:
+        - img [ref=e1798]
+      - generic [ref=e1802]: 你有2条未读通知
+      - button "点击查看" [ref=e1803] [cursor=pointer]:
+        - generic [ref=e1804]: 点击查看

@@ -52,6 +52,26 @@ def _run(
     subprocess.run(cmd, cwd=cwd or REPO_ROOT, env=run_env, check=True)
 
 
+def _capture(
+    cmd: list[str],
+    cwd: Path | None = None,
+    env: dict[str, str] | None = None,
+) -> str:
+    """Run command and return trimmed stdout."""
+    run_env = os.environ.copy()
+    if env:
+        run_env.update(env)
+    result = subprocess.run(
+        cmd,
+        cwd=cwd or REPO_ROOT,
+        env=run_env,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout.strip()
+
+
 def _pick_wheel(wheel_arg: str | None) -> Path:
     if wheel_arg:
         wheel_path = Path(wheel_arg).expanduser()
@@ -242,6 +262,60 @@ def main() -> int:
                 f"copaw[full] @ {wheel_uri}",
             ],
             env=install_env,
+        )
+        # Install cohub-recruiting-plugin if its wheel is in dist/
+        plugin_wheels = sorted(
+            (REPO_ROOT / "dist").glob("cohub_recruiting_plugin-*.whl"),
+            key=lambda p: p.stat().st_mtime,
+            reverse=True,
+        )
+        if plugin_wheels:
+            plugin_uri = plugin_wheels[0].resolve().as_uri()
+            print(f"Installing cohub-recruiting-plugin from {plugin_wheels[0].name}")
+            _run(
+                [
+                    conda,
+                    "run",
+                    "-n",
+                    env_name,
+                    "python",
+                    "-m",
+                    "pip",
+                    "install",
+                    plugin_uri,
+                ],
+            )
+        else:
+            print(
+                "Warning: cohub-recruiting-plugin wheel not found in dist/. "
+                "Recruiting plugin hooks will not be available."
+            )
+        # pip may downgrade setuptools (for example due to torch constraints),
+        # which leaves conda metadata out of sync and makes conda-pack abort.
+        setuptools_version = _capture(
+            [
+                conda,
+                "run",
+                "-n",
+                env_name,
+                "python",
+                "-c",
+                "import setuptools; print(setuptools.__version__)",
+            ],
+        )
+        print(
+            f"Reinstalling setuptools {setuptools_version} with conda to "
+            f"keep conda-pack metadata consistent...",
+        )
+        _run(
+            [
+                conda,
+                "install",
+                "-n",
+                env_name,
+                "-y",
+                f"setuptools={setuptools_version}",
+            ],
         )
         print("Verifying certifi is installed (required for SSL)...")
         _run(

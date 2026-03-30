@@ -182,6 +182,9 @@ if defined CERT_FILE (
 if not exist "%USERPROFILE%\.copaw\config.json" (
   "%~dp0python.exe" -u -m copaw init --defaults --accept-security
 )
+set "COPAW_BOOTSTRAP_RUNTIME_ROOT=%~dp0"
+set "COPAW_BOOTSTRAP_PYTHON=%~dp0python.exe"
+REM Recruiting assistant migrated to cohub-recruiting-plugin (auto-discovered via entry-points)
 "%~dp0python.exe" -u -m copaw desktop --log-level %COPAW_LOG_LEVEL%
 "@ | Set-Content -Path $LauncherBat -Encoding ASCII
 
@@ -227,6 +230,9 @@ if not exist "%USERPROFILE%\.copaw\config.json" (
   echo [Init] Creating config...
   "%~dp0python.exe" -u -m copaw init --defaults --accept-security
 )
+set "COPAW_BOOTSTRAP_RUNTIME_ROOT=%~dp0"
+set "COPAW_BOOTSTRAP_PYTHON=%~dp0python.exe"
+echo [Init] Recruiting assistant is now a plugin (cohub-recruiting-plugin)
 echo [Launch] Starting CoPaw Desktop with log-level=%COPAW_LOG_LEVEL%...
 echo Press Ctrl+C to stop
 echo.

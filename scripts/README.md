@@ -22,17 +22,17 @@ bash scripts/start_copaw_local.sh
 
 ## Setup recruiting assistant locally
 
+> **Note:** The recruiting assistant has been migrated to an independent plugin (`cohub-recruiting-plugin/`). This script now installs the plugin and runs its installer instead of syncing built-in skill files. See `cohub-recruiting-plugin/MIGRATION.md` for details.
+
 ```bash
 bash scripts/setup_recruiting_assistant_local.sh
 ```
 
-- Syncs the built-in `recruiting_assistant` skill into `.copaw-dev/workspaces/default/active_skills/`.
+- Installs the `cohub-recruiting-plugin` package in development mode.
+- Runs the plugin installer to configure MCP clients in `.copaw-dev/workspaces/default/`.
 - Seeds local env defaults such as `RECRUITING_ENABLED_SITES=liepin`.
-- Adds repo-local `boss`, `zhaopin`, and `liepin` MCP clients to the default agent.
-- Adds a repo-local `liepin` MCP client to the default agent, pointing at `copaw.agents.skills.recruiting_assistant.liepin_mcp.server`.
-- Adds a repo-local `zhaopin` MCP client, pointing at `copaw.agents.skills.recruiting_assistant.zhaopin_mcp.server`.
-- Uses a persistent Liepin browser profile under `.copaw-dev/recruiting/liepin-profile/`.
-- Uses a persistent Zhaopin browser profile under `.copaw-dev/recruiting/zhaopin-profile/`.
+- The plugin is auto-discovered by CoHub via the `copaw.skills` entry-point.
+- Uses persistent browser profiles under `.copaw-dev/recruiting/` (liepin, zhaopin, boss).
 
 ## Build website
 

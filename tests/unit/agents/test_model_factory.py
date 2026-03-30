@@ -4,10 +4,57 @@
 from __future__ import annotations
 
 import json
+from typing import Any, Union
 
+import pytest
 from agentscope.formatter import OpenAIChatFormatter
 
 from copaw.agents.model_factory import _create_file_block_support_formatter
+from copaw.agents.skill_hooks import clear_all_hooks, register_summary_hook
+
+# ------------------------------------------------------------------
+# Summary hook adapter (same logic previously hardcoded in model_factory)
+# ------------------------------------------------------------------
+
+_SITE_NAMES = {"liepin", "boss", "zhaopin"}
+
+
+def _recruiting_summary_hook(output: Union[str, list[dict[str, Any]]]) -> str:
+    """Extract pre-rendered summary_markdown from recruiting tool output."""
+    raw: str | None = None
+    if isinstance(output, str):
+        raw = output
+    elif isinstance(output, list):
+        for item in output:
+            if isinstance(item, dict) and item.get("type") == "text":
+                raw = item.get("text")
+                if raw:
+                    break
+    if not raw or not isinstance(raw, str):
+        return ""
+    text = raw.strip()
+    if not text.startswith("{"):
+        return ""
+    try:
+        payload = json.loads(text)
+    except (json.JSONDecodeError, ValueError):
+        return ""
+    if not isinstance(payload, dict):
+        return ""
+    if payload.get("site") not in _SITE_NAMES:
+        return ""
+    summary = payload.get("summary_markdown", "")
+    if not isinstance(summary, str) or not summary:
+        return ""
+    return f"招聘搜索结果摘要：\n{summary}"
+
+
+@pytest.fixture(autouse=True)
+def _register_summary_hooks():
+    """Register the recruiting summary hook before each test, clear after."""
+    register_summary_hook(_recruiting_summary_hook)
+    yield
+    clear_all_hooks()
 
 
 def test_formatter_prefers_recruiting_summary_markdown_for_tool_results() -> None:

@@ -24,4 +24,10 @@ python3 -m pip install --quiet build
 rm -rf dist/*
 python3 -m build --outdir dist .
 
+PLUGIN_DIR="$REPO_ROOT/cohub-recruiting-plugin"
+if [ -d "$PLUGIN_DIR" ]; then
+  echo "[wheel_build] Building cohub-recruiting-plugin wheel..."
+  python3 -m build --outdir dist "$PLUGIN_DIR"
+fi
+
 echo "[wheel_build] Done. Wheel(s) in: $REPO_ROOT/dist/"

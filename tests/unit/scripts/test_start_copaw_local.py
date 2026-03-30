@@ -155,6 +155,13 @@ def test_start_script_force_syncs_builtin_skills() -> None:
     assert "sync_skills_to_working_dir(workspace, force=True)" in script_text
 
 
+def test_start_script_uses_shared_recruiting_bootstrap_helper() -> None:
+    """Local startup should note recruiting is now a plugin."""
+    script_text = SCRIPT_SOURCE.read_text(encoding="utf-8")
+
+    assert "cohub-recruiting-plugin" in script_text
+
+
 def test_start_script_still_syncs_builtin_skills_when_app_is_already_running(
     tmp_path: Path,
 ) -> None:

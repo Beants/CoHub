@@ -18,11 +18,12 @@ from typing import Any, Literal
 
 from agentscope.message import Msg
 
-from .recruiting_tool_guard import should_block_recruiting_tool_call
-from .recruiting_tool_guard import (
-    build_recruiting_stop_reply,
-    find_latest_recruiting_tool_context,
-    find_recruiting_stop_context,
+from .skill_hooks import (
+    run_blocked_text_hooks,
+    run_latest_context_hooks,
+    run_stop_context_hooks,
+    run_stop_reply_hooks,
+    run_tool_block_hooks,
 )
 from ..security.tool_guard.models import TOOL_GUARD_DENIED_MARK
 
@@ -87,20 +88,20 @@ class ToolGuardMixin:
         """``True`` when a ``session_id`` is available for approval."""
         return bool(self._request_context.get("session_id"))
 
-    def _get_recruiting_runtime_block(self, tool_name: str):
-        """Return a recruiting turn stop context when the call must be blocked."""
+    def _get_skill_runtime_block(self, tool_name: str):
+        """Return a skill flow context when the tool call must be blocked."""
         memory_content = getattr(self.memory, "content", [])
-        return should_block_recruiting_tool_call(memory_content, tool_name)
+        return run_tool_block_hooks(memory_content, tool_name)
 
-    def _get_recruiting_stop_context(self):
-        """Return the current-turn recruiting stop context, if present."""
+    def _get_skill_stop_context(self):
+        """Return the current-turn skill stop context, if present."""
         memory_content = getattr(self.memory, "content", [])
-        return find_recruiting_stop_context(memory_content)
+        return run_stop_context_hooks(memory_content)
 
-    def _get_latest_recruiting_tool_context(self):
-        """Return the latest recruiting tool context in the current user turn."""
+    def _get_latest_skill_tool_context(self):
+        """Return the latest skill tool context in the current user turn."""
         memory_content = getattr(self.memory, "content", [])
-        return find_latest_recruiting_tool_context(memory_content)
+        return run_latest_context_hooks(memory_content)
 
     def _last_tool_response_is_denied(self) -> bool:
         """Check if the last message is a guard-denied tool result."""
@@ -277,7 +278,7 @@ class ToolGuardMixin:
     async def _acting(self, tool_call) -> dict | None:  # noqa: C901
         """Intercept sensitive tool calls before execution.
 
-        1. Block same-turn recruiting retries after a stop signal.
+        1. Block same-turn skill retries after a stop signal.
         2. If tool is in *denied_tools*, auto-deny unconditionally.
         3. If tool is in the guarded scope, check for a one-shot
            pre-approval, then run all guardians.
@@ -342,21 +343,22 @@ class ToolGuardMixin:
         if not tool_name:
             return None
 
-        recruiting_block = self._get_recruiting_runtime_block(tool_name)
-        if recruiting_block is not None:
+        skill_block = self._get_skill_runtime_block(tool_name)
+        if skill_block is not None:
             logger.warning(
-                "Recruiting guard: blocking tool '%s' after stop signal "
-                "(site=%s, status=%s, source_tool=%s)",
+                "Skill guard: blocking tool '%s' after stop signal "
+                "(skill=%s, site=%s, status=%s, source_tool=%s)",
                 tool_name,
-                recruiting_block.site,
-                recruiting_block.status,
-                recruiting_block.source_tool,
+                skill_block.skill,
+                skill_block.site,
+                skill_block.status,
+                skill_block.source_tool,
             )
             return _GuardAction(
-                "recruiting_blocked",
+                "skill_blocked",
                 tool_name,
                 tool_input,
-                guard_result=recruiting_block,
+                guard_result=skill_block,
             )
 
         if not engine.enabled:
@@ -408,8 +410,8 @@ class ToolGuardMixin:
         tool_call: dict[str, Any],
     ) -> dict | None:
         """Execute the guard action decided under lock (runs outside lock)."""
-        if action.kind == "recruiting_blocked":
-            return await self._acting_recruiting_blocked(
+        if action.kind == "skill_blocked":
+            return await self._acting_skill_blocked(
                 tool_call,
                 action.tool_name,
                 action.guard_result,
@@ -479,38 +481,16 @@ class ToolGuardMixin:
             }
         return result
 
-    async def _acting_recruiting_blocked(
+    async def _acting_skill_blocked(
         self,
         tool_call: dict[str, Any],
         tool_name: str,
         stop_context,
     ) -> dict | None:
-        """Return a hard denial when the recruiting flow says stop."""
+        """Return a hard denial when a skill flow guard says stop."""
         from agentscope.message import ToolResultBlock
 
-        blocked_text = (
-            "⛔ **Recruiting Flow Stopped / 招聘流程已停止**\n\n"
-            f"- Tool / 工具: `{tool_name}`\n"
-            f"- Site / 站点: `{stop_context.site}`\n"
-            f"- Previous status / 上一状态: `{stop_context.status}`\n"
-            f"- Source tool / 来源工具: `{stop_context.source_tool}`\n"
-            f"- stop_current_turn={str(stop_context.stop_current_turn).lower()}\n\n"
-            f"{stop_context.message}\n\n"
-            + (
-                "This turn already received a Liepin stop signal. Do not call "
-                "`browser_use` or any `liepin_*` tool again until the user sends "
-                "a new message.\n"
-                "本轮已经收到猎聘 MCP 的停止信号。请保持当前猎聘窗口，不要切换"
-                "到新的浏览器流程，等待用户下一条消息后再继续。"
-                if stop_context.stop_current_turn
-                else
-                "This Liepin recruiting flow is already active in the current "
-                "turn. Do not switch to `browser_use`; stay inside the Liepin "
-                "MCP tools for this turn.\n"
-                "当前轮次已经进入猎聘招聘流程。不要切换到 `browser_use`，"
-                "请继续停留在 Liepin MCP 工具流里。"
-            )
-        )
+        blocked_text = run_blocked_text_hooks(stop_context, tool_name)
 
         tool_res_msg = Msg(
             "system",
@@ -699,7 +679,7 @@ class ToolGuardMixin:
         self,
         tool_choice: (Literal["auto", "none", "required"] | None) = None,
     ) -> Msg:
-        """Short-circuit reasoning when replay, approval, or recruiting stop is pending."""
+        """Short-circuit reasoning when replay, approval, or skill stop is pending."""
         replay_msg = await self._reason_about_replay_done()
         if replay_msg is not None:
             return replay_msg
@@ -713,13 +693,13 @@ class ToolGuardMixin:
         if self._last_tool_response_is_denied():
             return await self._emit_waiting_for_approval()
 
-        stop_context = self._get_recruiting_stop_context()
+        stop_context = self._get_skill_stop_context()
         if stop_context is not None:
             return await self._emit_assistant_msg(
-                build_recruiting_stop_reply(stop_context),
+                run_stop_reply_hooks(stop_context),
             )
 
-        latest_context = self._get_latest_recruiting_tool_context()
+        latest_context = self._get_latest_skill_tool_context()
         if (
             latest_context is not None
             and latest_context.status == "ok"

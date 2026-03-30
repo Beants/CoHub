@@ -167,6 +167,13 @@ print(f'synced={synced} skipped={skipped}')
     )
 }
 
+bootstrap_recruiting_assistant() {
+    # NOTE: Recruiting assistant has been migrated to an independent plugin
+    # (cohub-recruiting-plugin). Install it with: pip install cohub-recruiting-plugin
+    # The plugin's register_hooks() is discovered via copaw.skills entry-points.
+    log "Skipping recruiting_assistant bootstrap (migrated to plugin)"
+}
+
 start_app() {
     log "Starting CoPaw on ${APP_URL}"
     (
@@ -182,6 +189,7 @@ main() {
         log "CoPaw is already running at ${APP_URL}"
         ensure_initialized
         sync_builtin_skills
+        bootstrap_recruiting_assistant
         open_browser
         return 0
     fi
@@ -190,6 +198,7 @@ main() {
     ensure_python_env
     ensure_initialized
     sync_builtin_skills
+    bootstrap_recruiting_assistant
 
     open_when_ready &
     OPENER_PID="$!"

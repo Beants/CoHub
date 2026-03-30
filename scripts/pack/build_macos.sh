@@ -86,6 +86,15 @@ cd "$HOME" || true
 # Log level: env var COPAW_LOG_LEVEL or default to "info"
 LOG_LEVEL="${COPAW_LOG_LEVEL:-info}"
 
+bootstrap_recruiting() {
+  # Configure recruiting assistant MCP servers and workspace on first launch
+  if [ -x "$ENV_DIR/bin/python" ]; then
+    echo "Bootstrapping recruiting assistant workspace..."
+    "$ENV_DIR/bin/python" -m copaw.app.recruiting_bootstrap 2>&1 || \
+      echo "WARNING: recruiting bootstrap failed (non-fatal)"
+  fi
+}
+
 if [ ! -t 2 ]; then
   mkdir -p "$HOME/.copaw"
   { echo "=== $(date) CoPaw starting ==="
@@ -111,6 +120,7 @@ if [ ! -t 2 ]; then
   if [ ! -f "$HOME/.copaw/config.json" ]; then
     "$ENV_DIR/bin/python" -u -m copaw init --defaults --accept-security
   fi
+  bootstrap_recruiting
   echo "Launching python with log-level=$LOG_LEVEL..."
   "$ENV_DIR/bin/python" -u -m copaw desktop --log-level "$LOG_LEVEL"
   EXIT=$?
@@ -126,6 +136,7 @@ fi
 if [ ! -f "$HOME/.copaw/config.json" ]; then
   "$ENV_DIR/bin/python" -u -m copaw init --defaults --accept-security
 fi
+bootstrap_recruiting
 exec "$ENV_DIR/bin/python" -u -m copaw desktop --log-level "$LOG_LEVEL"
 LAUNCHER
 chmod +x "${APP_DIR}/Contents/MacOS/${APP_NAME}"

@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "boss": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "-m",
+        "copaw.agents.skills.recruiting_assistant.boss_mcp.server"
+      ],
+      "env": {
+        "BOSS_PROFILE_DIR": "/path/to/boss-profile"
+      }
+    },
+    "zhaopin": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "-m",
+        "copaw.agents.skills.recruiting_assistant.zhaopin_mcp.server"
+      ],
+      "env": {
+        "ZHAOPIN_PROFILE_DIR": "/path/to/zhaopin-profile"
+      }
+    },
+    "liepin": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "-m",
+        "copaw.agents.skills.recruiting_assistant.liepin_mcp.server"
+      ],
+      "env": {
+        "LIEPIN_PROFILE_DIR": "/path/to/liepin-profile"
+      }
+    }
+  }
+}

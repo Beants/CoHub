@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cohub-recruiting-plugin"
+version = "0.1.0"
+description = "Recruiting assistant skill and MCP servers for CoHub/CoPaw"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "playwright>=1.49.0",
+    "pydantic>=2.0",
+    "httpx>=0.20",
+    "openai>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[project.entry-points."copaw.skills"]
+recruiting_assistant = "cohub_recruiting:register_hooks"
+
+[project.entry-points."copaw.skill_install"]
+recruiting_assistant = "cohub_recruiting.installer:install_recruiting_plugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cohub_recruiting"]

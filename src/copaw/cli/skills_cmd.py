@@ -179,3 +179,64 @@ def list_cmd(agent_id: str) -> None:
 def configure_cmd(agent_id: str) -> None:
     """Interactively configure skills."""
     configure_skills_interactive(agent_id=agent_id)
+
+
+@skills_group.command("install")
+@click.argument("skill_name")
+@click.option(
+    "--agent-id",
+    default="default",
+    help="Agent ID (defaults to 'default')",
+)
+def install_cmd(skill_name: str, agent_id: str) -> None:
+    """Install a skill plugin into the workspace.
+
+    Discovers the installer via the ``copaw.skill_install`` entry-point
+    group. The skill package must already be pip-installed.
+    """
+    import sys
+
+    if sys.version_info >= (3, 12):
+        from importlib.metadata import entry_points
+        eps = entry_points(group="copaw.skill_install")
+    else:
+        from importlib.metadata import entry_points
+        all_eps = entry_points()
+        eps = all_eps.get("copaw.skill_install", [])
+
+    installer = None
+    for ep in eps:
+        if ep.name == skill_name:
+            installer = ep.load()
+            break
+
+    if installer is None:
+        click.echo(
+            click.style(
+                f"No installer found for skill '{skill_name}'.\n"
+                "Make sure the plugin package is pip-installed and "
+                "provides a 'copaw.skill_install' entry-point.",
+                fg="red",
+            ),
+        )
+        raise SystemExit(1)
+
+    working_dir = _get_agent_workspace(agent_id)
+    click.echo(f"Installing skill '{skill_name}' into {working_dir} ...")
+
+    try:
+        result = installer(workspace_dir=str(working_dir))
+        click.echo(click.style("✓ Installation complete!", fg="green"))
+        if hasattr(result, "synced_count"):
+            click.echo(f"  Synced: {result.synced_count}")
+        if hasattr(result, "skipped_count"):
+            click.echo(f"  Skipped: {result.skipped_count}")
+        if hasattr(result, "mcp_clients_configured") and result.mcp_clients_configured:
+            click.echo(
+                f"  MCP clients: {', '.join(result.mcp_clients_configured)}",
+            )
+    except Exception as exc:
+        click.echo(
+            click.style(f"✗ Installation failed: {exc}", fg="red"),
+        )
+        raise SystemExit(1)

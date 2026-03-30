@@ -1,0 +1,1935 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - button "animation" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+      - generic [ref=e17]:
+        - link "人才推荐" [ref=e18] [cursor=pointer]:
+          - /url: /recommend
+          - generic [ref=e20]: 人才推荐
+        - link "职位管理" [ref=e21] [cursor=pointer]:
+          - /url: /job/manager
+          - img [ref=e22]:
+            - img [ref=e23]
+          - generic [ref=e26]: 职位管理
+        - link "搜索人才" [ref=e27] [cursor=pointer]:
+          - /url: /search
+          - img [ref=e1805]:
+            - img [ref=e1806]
+          - generic [ref=e32]: 搜索人才
+        - link "沟通 1" [ref=e33] [cursor=pointer]:
+          - /url: /chat/im
+          - img [ref=e34]:
+            - img [ref=e35]
+          - generic [ref=e39]:
+            - generic [ref=e40]: 沟通
+            - superscript [ref=e42]:
+              - generic [ref=e43]: "1"
+        - link "人才管理" [ref=e44] [cursor=pointer]:
+          - /url: /resume/apply
+          - img [ref=e45]:
+            - img [ref=e46]
+          - generic [ref=e49]: 人才管理
+        - link "猎头服务" [ref=e50] [cursor=pointer]:
+          - /url: https://msk.liepin.com
+          - img [ref=e51]:
+            - img [ref=e52]
+          - generic [ref=e56]: 猎头服务
+        - link "提效服务" [ref=e57] [cursor=pointer]:
+          - /url: /commerce/guide
+          - img [ref=e58]:
+            - img [ref=e59]
+          - generic [ref=e64]: 提效服务
+      - generic [ref=e67] [cursor=pointer]:
+        - img [ref=e68]:
+          - img [ref=e69]
+        - generic [ref=e73]: 我的专属顾问
+        - img [ref=e74]:
+          - img [ref=e75]
+      - generic [ref=e80]:
+        - link [ref=e82] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_008
+          - img [ref=e84]
+        - link [ref=e86] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-002
+          - img [ref=e88]
+        - link [ref=e90] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_008
+          - img [ref=e92]
+        - link [ref=e94] [cursor=pointer]:
+          - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-002
+          - img [ref=e96]
+    - generic [ref=e100]:
+      - generic [ref=e102]:
+        - generic [ref=e1808]: 搜索人才
+        - generic [ref=e117]:
+          - link [ref=e119] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_009
+            - img [ref=e121]
+          - link [ref=e123] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-001
+            - img [ref=e125]
+          - link [ref=e127] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015207/index.html?mscid=lp_pc_009
+            - img [ref=e129]
+          - link [ref=e131] [cursor=pointer]:
+            - /url: https://wow.liepin.com/t1015721/index.html?mscid=PP-ZJS-001
+            - img [ref=e133]
+        - generic [ref=e135]:
+          - generic [ref=e137]:
+            - button "bell" [ref=e138] [cursor=pointer]:
+              - img "bell" [ref=e139]:
+                - img [ref=e140]
+            - superscript [ref=e142]:
+              - generic [ref=e143]: "2"
+          - button "招聘数据" [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]: 招聘数据
+          - button "邀新赠VIP" [ref=e150] [cursor=pointer]:
+            - generic [ref=e151]: 邀新赠VIP
+          - generic [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]: 我的权益
+            - img "down" [ref=e156]:
+              - img [ref=e157]
+          - generic [ref=e159] [cursor=pointer]:
+            - img [ref=e162]
+            - strong [ref=e164]: 王晓飞
+            - img "down" [ref=e165]:
+              - img [ref=e166]
+      - main [ref=e168]:
+        - generic [ref=e1809]:
+          - generic [ref=e1812]:
+            - generic [ref=e1813]:
+              - generic [ref=e1814]:
+                - generic [ref=e1816] [cursor=pointer]:
+                  - generic [ref=e1817]: 不限职位
+                  - img [ref=e1818]:
+                    - img [ref=e1819]:
+                      - img [ref=e1820]
+                - separator [ref=e1822]
+              - generic [ref=e1824]:
+                - img [ref=e2093] [cursor=pointer]:
+                  - img [ref=e2094]
+                - textbox "搜职位/公司/行业等（中文用空格隔开，英文用逗号隔开）" [ref=e1825]: agent开发工程师
+              - separator [ref=e1826]
+              - generic [ref=e1828] [cursor=pointer]:
+                - generic [ref=e1830]: 包含全部关键词
+                - generic:
+                  - img:
+                    - img
+            - button "搜索" [ref=e1831] [cursor=pointer]:
+              - generic [ref=e1832]: 搜索
+          - generic [ref=e1833]:
+            - generic [ref=e1837]:
+              - generic [ref=e1838]:
+                - generic [ref=e1839]: 职 位
+                - generic [ref=e1840]:
+                  - generic:
+                    - button "确定":
+                      - generic: 确定
+                  - generic [ref=e1842]:
+                    - combobox "搜索职位" [ref=e1847]
+                    - generic [ref=e1849] [cursor=pointer]:
+                      - generic [ref=e1850]:
+                        - combobox [ref=e1852]
+                        - generic "全部职位" [ref=e1853]
+                      - generic:
+                        - img:
+                          - img
+              - generic [ref=e1854]:
+                - generic [ref=e1855]: 公 司
+                - generic [ref=e1856]:
+                  - generic:
+                    - button "确定":
+                      - generic: 确定
+                  - generic [ref=e1858]:
+                    - combobox "搜索公司" [ref=e1863]
+                    - generic [ref=e1865] [cursor=pointer]:
+                      - generic [ref=e1866]:
+                        - combobox [ref=e1868]
+                        - generic "全部公司" [ref=e1869]
+                      - generic:
+                        - img:
+                          - img
+            - generic [ref=e1870] [cursor=pointer]:
+              - img "delete" [ref=e1871]:
+                - img [ref=e1872]
+              - text: 清除全部
+            - generic [ref=e1874]:
+              - generic [ref=e1875]:
+                - generic [ref=e1877]: 目前城市
+                - generic [ref=e1879]:
+                  - generic [ref=e1880] [cursor=pointer]: 不限
+                  - generic [ref=e1881] [cursor=pointer]: 其他
+              - generic [ref=e1882]:
+                - generic [ref=e1884]: 期望城市
+                - generic [ref=e1886]:
+                  - generic [ref=e1887] [cursor=pointer]: 不限
+                  - generic [ref=e1888] [cursor=pointer]: 山东
+                  - generic [ref=e1889] [cursor=pointer]: 青岛
+                  - generic [ref=e1890] [cursor=pointer]: 上海
+                  - generic [ref=e1891] [cursor=pointer]: 杭州
+                  - generic [ref=e1892] [cursor=pointer]: 其他
+              - generic [ref=e1893]:
+                - generic [ref=e1895]: 经 验
+                - generic [ref=e1897]:
+                  - generic [ref=e1898] [cursor=pointer]: 不限
+                  - generic [ref=e1899] [cursor=pointer]: 在校/应届
+                  - generic [ref=e1900] [cursor=pointer]: 1-3年
+                  - generic [ref=e1901] [cursor=pointer]: 3-5年
+                  - generic [ref=e1902] [cursor=pointer]: 5-10年
+                  - generic [ref=e1903] [cursor=pointer]: 自定义
+              - generic [ref=e1904]:
+                - generic [ref=e1906]: 教育经历
+                - generic [ref=e1908]:
+                  - generic [ref=e1909] [cursor=pointer]: 不限
+                  - generic [ref=e1910] [cursor=pointer]: 本科
+                  - generic [ref=e1911] [cursor=pointer]: 硕士
+                  - generic [ref=e1912] [cursor=pointer]: 博士/博士后
+                  - generic [ref=e1913] [cursor=pointer]: 大专
+                  - generic [ref=e1914] [cursor=pointer]: 中专/中技
+                  - generic [ref=e1915] [cursor=pointer]: 高中及以下
+                  - separator [ref=e1916]
+                  - generic [ref=e1917] [cursor=pointer]:
+                    - generic [ref=e1919]: 统招要求
+                    - img [ref=e1920]:
+                      - img [ref=e1921]:
+                        - img [ref=e1922]
+                  - separator [ref=e1924]
+                  - generic [ref=e1925] [cursor=pointer]:
+                    - generic [ref=e1926]:
+                      - generic: 院校要求
+                    - img [ref=e1927]:
+                      - img [ref=e1928]:
+                        - img [ref=e1929]
+              - generic [ref=e1931]:
+                - generic [ref=e1933]: 其他筛选
+                - generic [ref=e1935]:
+                  - generic [ref=e1936]:
+                    - generic [ref=e1937] [cursor=pointer]:
+                      - generic [ref=e1939]: 活跃状态
+                      - img [ref=e1940]:
+                        - img [ref=e1941]:
+                          - img [ref=e1942]
+                    - generic [ref=e1944] [cursor=pointer]:
+                      - generic [ref=e1945]:
+                        - generic: 求职状态
+                      - img [ref=e1946]:
+                        - img [ref=e1947]:
+                          - img [ref=e1948]
+                    - generic [ref=e1950] [cursor=pointer]:
+                      - generic [ref=e1952]: 跳槽频率
+                      - img [ref=e1953]:
+                        - img [ref=e1954]:
+                          - img [ref=e1955]
+                    - generic [ref=e1958] [cursor=pointer]:
+                      - generic [ref=e1959]:
+                        - generic: 年龄要求
+                      - img [ref=e1960]:
+                        - img [ref=e1961]:
+                          - img [ref=e1962]
+                    - generic [ref=e1964] [cursor=pointer]:
+                      - generic [ref=e1966]: 性别要求
+                      - img [ref=e1967]:
+                        - img [ref=e1968]:
+                          - img [ref=e1969]
+                    - generic [ref=e1972] [cursor=pointer]:
+                      - generic [ref=e1973]:
+                        - generic: 语言要求
+                      - img [ref=e1974]:
+                        - img [ref=e1975]:
+                          - img [ref=e1976]
+                    - generic [ref=e1978] [cursor=pointer]:
+                      - generic [ref=e1979]:
+                        - generic: 毕业年份
+                      - img [ref=e1980]:
+                        - img [ref=e1981]:
+                          - img [ref=e1982]
+                    - generic [ref=e1985] [cursor=pointer]:
+                      - generic [ref=e1986]:
+                        - generic: 当前行业
+                      - img [ref=e1987]:
+                        - img [ref=e1988]:
+                          - img [ref=e1989]
+                    - generic [ref=e1992] [cursor=pointer]:
+                      - generic [ref=e1993]:
+                        - generic: 期望行业
+                      - img [ref=e1994]:
+                        - img [ref=e1995]:
+                          - img [ref=e1996]
+                    - generic [ref=e1998]:
+                      - generic [ref=e1999] [cursor=pointer]:
+                        - generic [ref=e2000]:
+                          - generic: 当前职能
+                        - img [ref=e2001]:
+                          - img [ref=e2002]:
+                            - img [ref=e2003]
+                      - generic [ref=e2009] [cursor=pointer]:
+                        - generic [ref=e2010]:
+                          - combobox [ref=e2014]
+                          - generic: 请输入职位名称搜索
+                        - img [ref=e2015]:
+                          - img [ref=e2016]
+                    - generic [ref=e2018]:
+                      - generic [ref=e2019] [cursor=pointer]:
+                        - generic [ref=e2020]:
+                          - generic: 期望职能
+                        - img [ref=e2021]:
+                          - img [ref=e2022]:
+                            - img [ref=e2023]
+                      - generic [ref=e2029] [cursor=pointer]:
+                        - generic [ref=e2030]:
+                          - combobox [ref=e2034]
+                          - generic: 请输入职位名称搜索
+                        - img [ref=e2035]:
+                          - img [ref=e2036]
+                    - generic [ref=e2039] [cursor=pointer]:
+                      - generic [ref=e2041]: 目前年薪
+                      - img [ref=e2042]:
+                        - img [ref=e2043]:
+                          - img [ref=e2044]
+                    - generic [ref=e2047] [cursor=pointer]:
+                      - generic [ref=e2049]: 期望年薪
+                      - img [ref=e2050]:
+                        - img [ref=e2051]:
+                          - img [ref=e2052]
+                    - generic [ref=e2054] [cursor=pointer]:
+                      - generic [ref=e2056]: 简历语言
+                      - img [ref=e2057]:
+                        - img [ref=e2058]:
+                          - img [ref=e2059]
+                    - generic [ref=e2061] [cursor=pointer]:
+                      - generic [ref=e2063]: 公司性质
+                      - img [ref=e2064]:
+                        - img [ref=e2065]:
+                          - img [ref=e2066]
+                    - generic [ref=e2096] [cursor=pointer]:
+                      - generic [ref=e2098]: 搜索范围
+                      - img [ref=e2099]:
+                        - img [ref=e2100]:
+                          - img [ref=e2101]
+                    - generic [ref=e2068] [cursor=pointer]:
+                      - checkbox "管理经验" [ref=e2070]
+                      - generic [ref=e2072]: 管理经验
+                    - generic [ref=e2073] [cursor=pointer]:
+                      - checkbox "海外工作" [ref=e2075]
+                      - generic [ref=e2077]: 海外工作
+                    - generic [ref=e2078]:
+                      - generic:
+                        - button "确定":
+                          - generic: 确定
+                      - textbox "请输入专业名称" [ref=e2080]
+                    - generic [ref=e2081]:
+                      - generic:
+                        - button "确定":
+                          - generic: 确定
+                      - textbox "请输入毕业院校" [ref=e2083]
+                  - generic [ref=e2084] [cursor=pointer]:
+                    - img "select-down" [ref=e2085]:
+                      - img [ref=e2086]
+                    - text: 更多条件
+          - generic [ref=e2103]:
+            - generic [ref=e2104]:
+              - generic [ref=e2105] [cursor=pointer]:
+                - generic [ref=e2106]:
+                  - text: 共有
+                  - emphasis [ref=e2107]: "139"
+                  - text: 份简历
+                - img [ref=e2109]
+              - generic [ref=e2112] [cursor=pointer]:
+                - generic "智能排序" [ref=e2114]
+                - img [ref=e2115]:
+                  - img [ref=e2116]:
+                    - img [ref=e2117]
+              - generic [ref=e2119]:
+                - generic [ref=e2120] [cursor=pointer]:
+                  - generic [ref=e2122]: 沟通状态
+                  - img [ref=e2123]:
+                    - img [ref=e2124]:
+                      - img [ref=e2125]
+                - generic [ref=e2127] [cursor=pointer]:
+                  - generic [ref=e2129]: 获取联系方式状态
+                  - img [ref=e2130]:
+                    - img [ref=e2131]:
+                      - img [ref=e2132]
+                - generic [ref=e2134] [cursor=pointer]:
+                  - checkbox "隐藏已查看" [ref=e2136]
+                  - generic [ref=e2138]: 隐藏已查看
+              - generic [ref=e2139] [cursor=pointer]:
+                - checkbox "只匹配最近一段工作" [ref=e2141]
+                - generic [ref=e2143]: 只匹配最近一段工作
+            - generic [ref=e2146]:
+              - button [ref=e2148] [cursor=pointer]:
+                - img [ref=e2149]:
+                  - img [ref=e2150]
+              - link "folder-open" [ref=e2155] [cursor=pointer]:
+                - /url: /resume/collect
+                - img "folder-open" [ref=e2156]:
+                  - img [ref=e2157]
+          - generic [ref=e2159]:
+            - list [ref=e2160]:
+              - listitem [ref=e2161] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2163]:
+                  - generic [ref=e2164]:
+                    - generic [ref=e2165]:
+                      - main [ref=e2166]:
+                        - img "头像" [ref=e2167]
+                      - emphasis [ref=e2169]: 今天活跃
+                    - generic [ref=e2170]:
+                      - generic [ref=e2171]:
+                        - emphasis [ref=e2172]: 尹**
+                        - img [ref=e2173]:
+                          - img [ref=e2174]
+                      - generic [ref=e2181]:
+                        - generic "31岁" [ref=e2182]
+                        - generic "4年" [ref=e2183]
+                        - generic "硕士" [ref=e2184]
+                        - generic "北京-朝阳区" [ref=e2185]
+                      - generic [ref=e2186]:
+                        - emphasis [ref=e2187]: 期望：
+                        - generic "北京 Java 50-60K·14薪" [ref=e2188]: 北京Java50-60K·14薪
+                      - generic [ref=e2190]: 人工智能
+                  - generic [ref=e2192]:
+                    - generic [ref=e2193]:
+                      - generic [ref=e2194]:
+                        - img [ref=e2195]:
+                          - img [ref=e2196]
+                        - generic [ref=e2198]:
+                          - generic "阿里" [ref=e2199]
+                          - emphasis [ref=e2200]
+                          - generic [ref=e2201]:
+                            - generic "Agent 开发工程师" [ref=e2202]
+                            - emphasis [ref=e2203]
+                            - text: 2024.04-至今(1年11个月)
+                      - generic [ref=e2205]:
+                        - generic "百度" [ref=e2206]
+                        - emphasis [ref=e2207]
+                        - generic [ref=e2208]:
+                          - generic "Agent 开发工程师" [ref=e2209]
+                          - emphasis [ref=e2210]
+                          - text: 2021.07-2025.04(3年9个月)
+                    - generic [ref=e2211]:
+                      - generic [ref=e2212]:
+                        - img [ref=e2213]:
+                          - img [ref=e2214]
+                        - generic "北京交通大学 · 软件工程 · 硕士 · 统招 2019.08-2021.08(2年)" [ref=e2216]:
+                          - generic [ref=e2217]: 北京交通大学
+                          - emphasis [ref=e2218]
+                          - generic [ref=e2219]:
+                            - text: 软件工程
+                            - emphasis [ref=e2220]
+                            - text: 硕士
+                            - emphasis [ref=e2221]
+                            - text: 统招
+                            - emphasis [ref=e2222]
+                            - text: 2019.08-2021.08(2年)
+                      - generic "河北师范大学 · 软件工程 · 本科 · 统招 2015.08-2019.06(4年)" [ref=e2224]:
+                        - generic [ref=e2225]: 河北师范大学
+                        - emphasis [ref=e2226]
+                        - generic [ref=e2227]:
+                          - text: 软件工程
+                          - emphasis [ref=e2228]
+                          - text: 本科
+                          - emphasis [ref=e2229]
+                          - text: 统招
+                          - emphasis [ref=e2230]
+                          - text: 2015.08-2019.06(4年)
+                  - button "立即沟通" [ref=e2233]:
+                    - generic [ref=e2234]: 立即沟通
+              - listitem [ref=e2235] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2237]:
+                  - generic [ref=e2238]:
+                    - generic [ref=e2239]:
+                      - main [ref=e2240]:
+                        - img "头像" [ref=e2241]
+                      - emphasis [ref=e2243]: 今天活跃
+                    - generic [ref=e2244]:
+                      - generic [ref=e2245]:
+                        - emphasis [ref=e2246]: 朱**
+                        - img [ref=e2247]:
+                          - img [ref=e2248]
+                      - generic [ref=e2255]:
+                        - generic "25岁" [ref=e2256]
+                        - generic "1年" [ref=e2257]
+                        - generic "硕士" [ref=e2258]
+                        - generic "深圳" [ref=e2259]
+                      - generic [ref=e2260]:
+                        - emphasis [ref=e2261]: 期望：
+                        - generic "深圳 大模型算法 15-20K·14薪" [ref=e2262]: 深圳大模型算法15-20K·14薪
+                      - generic [ref=e2264]: 其他行业
+                  - generic [ref=e2266]:
+                    - generic [ref=e2267]:
+                      - generic [ref=e2268]:
+                        - img [ref=e2269]:
+                          - img [ref=e2270]
+                        - generic [ref=e2272]:
+                          - generic "上海科锐国际人力资源有限公司" [ref=e2273]
+                          - emphasis [ref=e2274]
+                          - generic [ref=e2275]:
+                            - generic "AI Agent开发工程师" [ref=e2276]
+                            - emphasis [ref=e2277]
+                            - text: 2024.05-2025.12(1年7个月)
+                      - generic [ref=e2279]:
+                        - generic "Bright Network" [ref=e2280]
+                        - emphasis [ref=e2281]
+                        - generic [ref=e2282]:
+                          - text: 技术实习
+                          - emphasis [ref=e2283]
+                          - text: 2022.07-2022.07
+                    - generic [ref=e2284]:
+                      - generic [ref=e2285]:
+                        - img [ref=e2286]:
+                          - img [ref=e2287]
+                        - generic "英国华威大学 · 计算机科学 · 硕士 · 统招 2022.09-2023.09(1年)" [ref=e2289]:
+                          - generic [ref=e2290]: 英国华威大学
+                          - emphasis [ref=e2291]
+                          - generic [ref=e2292]:
+                            - text: 计算机科学
+                            - emphasis [ref=e2293]
+                            - text: 硕士
+                            - emphasis [ref=e2294]
+                            - text: 统招
+                            - emphasis [ref=e2295]
+                            - text: 2022.09-2023.09(1年)
+                      - generic "英国女王大学预科 · 电子工程（国际大一） · 本科 · 统招 2019.09-2020.06(1年)" [ref=e2297]:
+                        - generic [ref=e2298]: 英国女王大学预科
+                        - emphasis [ref=e2299]
+                        - generic [ref=e2300]:
+                          - text: 电子工程（国际大一）
+                          - emphasis [ref=e2301]
+                          - text: 本科
+                          - emphasis [ref=e2302]
+                          - text: 统招
+                          - emphasis [ref=e2303]
+                          - text: 2019.09-2020.06(1年)
+                  - button "立即沟通" [ref=e2306]:
+                    - generic [ref=e2307]: 立即沟通
+              - listitem [ref=e2308] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2310]:
+                  - generic [ref=e2311]:
+                    - generic [ref=e2312]:
+                      - main [ref=e2313]:
+                        - img "头像" [ref=e2314]
+                      - emphasis [ref=e2316]: 今天活跃
+                    - generic [ref=e2317]:
+                      - generic [ref=e2318]:
+                        - emphasis [ref=e2319]: 王**
+                        - img [ref=e2320]:
+                          - img [ref=e2321]
+                      - generic [ref=e2328]:
+                        - generic "29岁" [ref=e2329]
+                        - generic "3年" [ref=e2330]
+                        - generic "硕士" [ref=e2331]
+                        - generic "福州" [ref=e2332]
+                      - generic [ref=e2333]:
+                        - emphasis [ref=e2334]: 期望：
+                        - generic "福州 Python 25-35K·14薪" [ref=e2335]: 福州Python25-35K·14薪
+                      - generic [ref=e2337]: IT服务
+                  - generic [ref=e2339]:
+                    - generic [ref=e2340]:
+                      - generic [ref=e2341]:
+                        - img [ref=e2342]:
+                          - img [ref=e2343]
+                        - generic [ref=e2345]:
+                          - generic "武汉光庭信息技术股份有限公司" [ref=e2346]
+                          - emphasis [ref=e2347]
+                          - generic [ref=e2348]:
+                            - generic "Agent开发工程师(Python)" [ref=e2349]
+                            - emphasis [ref=e2350]
+                            - text: 2025.03-至今(1年)
+                      - generic [ref=e2352]:
+                        - generic "武汉光庭信息技术股份有限公司" [ref=e2353]
+                        - emphasis [ref=e2354]
+                        - generic [ref=e2355]:
+                          - generic "Agent 开发工程师（Python）" [ref=e2356]
+                          - emphasis [ref=e2357]
+                          - text: 2025.03-至今(1年)
+                    - generic [ref=e2358]:
+                      - generic [ref=e2359]:
+                        - img [ref=e2360]:
+                          - img [ref=e2361]
+                        - generic "南昌大学 · 电子与通信工程 · 硕士 · 统招 2019.09-2022.06(3年)" [ref=e2363]:
+                          - generic [ref=e2364]: 南昌大学
+                          - emphasis [ref=e2365]
+                          - generic [ref=e2366]:
+                            - text: 电子与通信工程
+                            - emphasis [ref=e2367]
+                            - text: 硕士
+                            - emphasis [ref=e2368]
+                            - text: 统招
+                            - emphasis [ref=e2369]
+                            - text: 2019.09-2022.06(3年)
+                      - generic "厦门理工学院 · 电子信息工程 · 本科 · 统招 2014.09-2018.06(4年)" [ref=e2371]:
+                        - generic [ref=e2372]: 厦门理工学院
+                        - emphasis [ref=e2373]
+                        - generic [ref=e2374]:
+                          - text: 电子信息工程
+                          - emphasis [ref=e2375]
+                          - text: 本科
+                          - emphasis [ref=e2376]
+                          - text: 统招
+                          - emphasis [ref=e2377]
+                          - text: 2014.09-2018.06(4年)
+                  - button "立即沟通" [ref=e2380]:
+                    - generic [ref=e2381]: 立即沟通
+              - listitem [ref=e2382] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2384]:
+                  - generic [ref=e2385]:
+                    - generic [ref=e2386]:
+                      - main [ref=e2387]:
+                        - img "头像" [ref=e2388]
+                      - emphasis [ref=e2390]: 今天活跃
+                    - generic [ref=e2391]:
+                      - generic [ref=e2392]:
+                        - emphasis [ref=e2393]: 陈**
+                        - img [ref=e2394]:
+                          - img [ref=e2395]
+                      - generic [ref=e2402]:
+                        - generic "31岁" [ref=e2403]
+                        - generic "9年" [ref=e2404]
+                        - generic "本科" [ref=e2405]
+                        - generic "南京" [ref=e2406]
+                      - generic [ref=e2407]:
+                        - emphasis [ref=e2408]: 期望：
+                        - generic "南京 算法工程师 23-25K·13薪" [ref=e2409]: 南京算法工程师23-25K·13薪
+                      - generic [ref=e2411]: 医疗器械
+                  - generic [ref=e2413]:
+                    - generic [ref=e2414]:
+                      - generic [ref=e2415]:
+                        - img [ref=e2416]:
+                          - img [ref=e2417]
+                        - generic [ref=e2419]:
+                          - generic "鱼跃医疗" [ref=e2420]
+                          - emphasis [ref=e2421]
+                          - generic [ref=e2422]:
+                            - generic "AI Agent 开发工程师,Python 开发工程师" [ref=e2423]
+                            - emphasis [ref=e2424]
+                            - text: 2021.11-至今(4年4个月)
+                      - generic [ref=e2426]:
+                        - generic "鱼跃医疗" [ref=e2427]
+                        - emphasis [ref=e2428]
+                        - generic [ref=e2429]:
+                          - generic "AI Agent 开发工程师,Python 开发工程师" [ref=e2430]
+                          - emphasis [ref=e2431]
+                          - text: 2021.11-至今(4年4个月)
+                    - generic [ref=e2432]:
+                      - generic [ref=e2433]:
+                        - img [ref=e2434]:
+                          - img [ref=e2435]
+                        - generic "安徽新华学院 · 电子信息科学与技术 · 本科 · 统招 2012.09-2016.06(4年)" [ref=e2437]:
+                          - generic [ref=e2438]: 安徽新华学院
+                          - emphasis [ref=e2439]
+                          - generic [ref=e2440]:
+                            - text: 电子信息科学与技术
+                            - emphasis [ref=e2441]
+                            - text: 本科
+                            - emphasis [ref=e2442]
+                            - text: 统招
+                            - emphasis [ref=e2443]
+                            - text: 2012.09-2016.06(4年)
+                      - generic "安徽新华学院 · 电子信息科学与技术 · 本科 · 统招 2012.09-2016.06(4年)" [ref=e2445]:
+                        - generic [ref=e2446]: 安徽新华学院
+                        - emphasis [ref=e2447]
+                        - generic [ref=e2448]:
+                          - text: 电子信息科学与技术
+                          - emphasis [ref=e2449]
+                          - text: 本科
+                          - emphasis [ref=e2450]
+                          - text: 统招
+                          - emphasis [ref=e2451]
+                          - text: 2012.09-2016.06(4年)
+                  - button "立即沟通" [ref=e2454]:
+                    - generic [ref=e2455]: 立即沟通
+              - listitem [ref=e2456] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2458]:
+                  - generic [ref=e2459]:
+                    - generic [ref=e2460]:
+                      - main [ref=e2461]:
+                        - img "头像" [ref=e2462]
+                      - emphasis [ref=e2464]: 今天活跃
+                    - generic [ref=e2465]:
+                      - generic [ref=e2466]:
+                        - emphasis [ref=e2467]: 王**
+                        - img [ref=e2468]:
+                          - img [ref=e2469]
+                      - generic [ref=e2476]:
+                        - generic "32岁" [ref=e2477]
+                        - generic "4年" [ref=e2478]
+                        - generic "硕士" [ref=e2479]
+                        - generic "深圳" [ref=e2480]
+                      - generic [ref=e2481]:
+                        - emphasis [ref=e2482]: 期望：
+                        - generic "深圳 算法工程师 23-26K·16薪" [ref=e2483]: 深圳算法工程师23-26K·16薪
+                      - generic [ref=e2485]: 通信设备
+                  - generic [ref=e2487]:
+                    - generic [ref=e2488]:
+                      - generic [ref=e2489]:
+                        - img [ref=e2490]:
+                          - img [ref=e2491]
+                        - generic [ref=e2493]:
+                          - generic "华海智汇技术有限公司（华为海洋）" [ref=e2494]
+                          - emphasis [ref=e2495]
+                          - generic [ref=e2496]:
+                            - generic "AI Agent开发工程师" [ref=e2497]
+                            - emphasis [ref=e2498]
+                            - text: 2025.09-至今(6个月)
+                      - generic [ref=e2500]:
+                        - generic "北京外企德科人力资源服务深圳有限公司（华为OD）" [ref=e2501]
+                        - emphasis [ref=e2502]
+                        - generic [ref=e2503]:
+                          - text: AI软件开发工程师
+                          - emphasis [ref=e2504]
+                          - text: 2021.12-2025.09(3年9个月)
+                    - generic [ref=e2505]:
+                      - generic [ref=e2506]:
+                        - img [ref=e2507]:
+                          - img [ref=e2508]
+                        - generic "长沙理工大学 · 软件工程 · 硕士 · 统招 2018.09-2021.06(3年)" [ref=e2510]:
+                          - generic [ref=e2511]: 长沙理工大学
+                          - emphasis [ref=e2512]
+                          - generic [ref=e2513]:
+                            - text: 软件工程
+                            - emphasis [ref=e2514]
+                            - text: 硕士
+                            - emphasis [ref=e2515]
+                            - text: 统招
+                            - emphasis [ref=e2516]
+                            - text: 2018.09-2021.06(3年)
+                      - generic "长沙理工大学城南学院 · 计算机科学与技术 · 本科 · 统招 2012.09-2016.06(4年)" [ref=e2518]:
+                        - generic [ref=e2519]: 长沙理工大学城南学院
+                        - emphasis [ref=e2520]
+                        - generic [ref=e2521]:
+                          - text: 计算机科学与技术
+                          - emphasis [ref=e2522]
+                          - text: 本科
+                          - emphasis [ref=e2523]
+                          - text: 统招
+                          - emphasis [ref=e2524]
+                          - text: 2012.09-2016.06(4年)
+                  - button "立即沟通" [ref=e2527]:
+                    - generic [ref=e2528]: 立即沟通
+              - listitem [ref=e2529] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2531]:
+                  - generic [ref=e2532]:
+                    - generic [ref=e2533]:
+                      - main [ref=e2534]:
+                        - img "头像" [ref=e2535]
+                      - emphasis [ref=e2537]: 3天内活跃
+                    - generic [ref=e2538]:
+                      - generic [ref=e2539]:
+                        - emphasis [ref=e2540]: 杨**
+                        - img [ref=e2541]:
+                          - img [ref=e2542]
+                      - generic [ref=e2549]:
+                        - generic "24岁" [ref=e2550]
+                        - generic "2026年毕业" [ref=e2551]
+                        - generic "硕士" [ref=e2552]
+                        - generic "重庆-渝北区" [ref=e2553]
+                      - generic [ref=e2554]:
+                        - emphasis [ref=e2555]: 期望：
+                        - generic "重庆 算法 9-14K" [ref=e2556]: 重庆算法9-14K
+                      - generic [ref=e2558]: 人工智能
+                  - generic [ref=e2560]:
+                    - generic [ref=e2562]:
+                      - img [ref=e2563]:
+                        - img [ref=e2564]
+                      - generic [ref=e2566]:
+                        - generic "重庆星瀚云链" [ref=e2567]
+                        - emphasis [ref=e2568]
+                        - generic [ref=e2569]:
+                          - generic "agent开发工程师" [ref=e2570]
+                          - emphasis [ref=e2571]
+                          - text: 2025.07-2025.09(2个月)
+                    - generic [ref=e2573]:
+                      - img [ref=e2574]:
+                        - img [ref=e2575]
+                      - generic "重庆理工大学 · 人工智能 · 硕士 · 统招 2023.09-2026.06(3年)" [ref=e2577]:
+                        - generic [ref=e2578]: 重庆理工大学
+                        - emphasis [ref=e2579]
+                        - generic [ref=e2580]:
+                          - text: 人工智能
+                          - emphasis [ref=e2581]
+                          - text: 硕士
+                          - emphasis [ref=e2582]
+                          - text: 统招
+                          - emphasis [ref=e2583]
+                          - text: 2023.09-2026.06(3年)
+                  - button "立即沟通" [ref=e2586]:
+                    - generic [ref=e2587]: 立即沟通
+              - listitem [ref=e2588] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2590]:
+                  - generic [ref=e2591]:
+                    - generic [ref=e2592]:
+                      - main [ref=e2593]:
+                        - img "头像" [ref=e2594]
+                      - emphasis [ref=e2596]: 3天内活跃
+                    - generic [ref=e2597]:
+                      - generic [ref=e2598]:
+                        - emphasis [ref=e2599]: 李**
+                        - img [ref=e2600]:
+                          - img [ref=e2601]
+                      - generic [ref=e2608]:
+                        - generic "24岁" [ref=e2609]
+                        - generic "2年" [ref=e2610]
+                        - generic "本科" [ref=e2611]
+                        - generic "深圳" [ref=e2612]
+                      - generic [ref=e2613]:
+                        - emphasis [ref=e2614]: 期望：
+                        - generic "上海 Python 18-22K" [ref=e2615]: 上海Python18-22K
+                      - generic [ref=e2616]:
+                        - generic [ref=e2617]: 云计算/大数据
+                        - generic [ref=e2618]: Python
+                        - generic [ref=e2619]: MySQL
+                        - generic [ref=e2620]: Oracle
+                  - generic [ref=e2622]:
+                    - generic [ref=e2623]:
+                      - generic [ref=e2624]:
+                        - img [ref=e2625]:
+                          - img [ref=e2626]
+                        - generic [ref=e2628]:
+                          - generic "上海安畅网络" [ref=e2629]
+                          - emphasis [ref=e2630]
+                          - generic [ref=e2631]:
+                            - generic "Agent开发工程师" [ref=e2632]
+                            - emphasis [ref=e2633]
+                            - text: 2025.09-至今(6个月)
+                      - generic [ref=e2635]:
+                        - generic "雷云智创(深圳)技术有限公司" [ref=e2636]
+                        - emphasis [ref=e2637]
+                        - generic [ref=e2638]:
+                          - generic "Python 全栈开发工程师 / Agent 开发工程师" [ref=e2639]
+                          - emphasis [ref=e2640]
+                          - text: 2025.01-2025.08(7个月)
+                      - generic [ref=e2642]:
+                        - generic "珠海金智维人工智能股份有限公司" [ref=e2643]
+                        - emphasis [ref=e2644]
+                        - generic [ref=e2645]:
+                          - text: Python开发工程师
+                          - emphasis [ref=e2646]
+                          - text: 2024.01-2024.10(9个月)
+                    - generic [ref=e2648]:
+                      - img [ref=e2649]:
+                        - img [ref=e2650]
+                      - generic "广州新华学院 · 计算机科学与技术 · 本科 · 统招 2022.09-2024.06(2年)" [ref=e2652]:
+                        - generic [ref=e2653]: 广州新华学院
+                        - emphasis [ref=e2654]
+                        - generic [ref=e2655]:
+                          - text: 计算机科学与技术
+                          - emphasis [ref=e2656]
+                          - text: 本科
+                          - emphasis [ref=e2657]
+                          - text: 统招
+                          - emphasis [ref=e2658]
+                          - text: 2022.09-2024.06(2年)
+                  - button "立即沟通" [ref=e2661]:
+                    - generic [ref=e2662]: 立即沟通
+              - listitem [ref=e2663] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2665]:
+                  - generic [ref=e2666]:
+                    - generic [ref=e2667]:
+                      - main [ref=e2668]:
+                        - img "头像" [ref=e2669]
+                      - emphasis [ref=e2671]: 在线
+                    - generic [ref=e2672]:
+                      - generic [ref=e2673]:
+                        - emphasis [ref=e2674]: 曾**
+                        - img [ref=e2675]:
+                          - img [ref=e2676]
+                      - generic [ref=e2683]:
+                        - generic "35岁" [ref=e2684]
+                        - generic "15年" [ref=e2685]
+                        - generic "本科" [ref=e2686]
+                        - generic "深圳" [ref=e2687]
+                      - generic [ref=e2688]:
+                        - emphasis [ref=e2689]: 期望：
+                        - generic "深圳 自然语言处理(NLP) 35-40K·13薪" [ref=e2690]: 深圳自然语言处理(NLP)35-40K·13薪
+                      - generic [ref=e2692]: 人工智能
+                  - generic [ref=e2694]:
+                    - generic [ref=e2695]:
+                      - generic [ref=e2696]:
+                        - img [ref=e2697]:
+                          - img [ref=e2698]
+                        - generic [ref=e2700]:
+                          - generic "影诺智能科技（深圳）有限公司" [ref=e2701]
+                          - emphasis [ref=e2702]
+                          - generic [ref=e2703]:
+                            - generic "Agent开发工程师" [ref=e2704]
+                            - emphasis [ref=e2705]
+                            - text: 2025.08-至今(7个月)
+                      - generic [ref=e2707]:
+                        - generic "接私活+考研" [ref=e2708]
+                        - emphasis [ref=e2709]
+                        - generic [ref=e2710]:
+                          - text: NLP工程师
+                          - emphasis [ref=e2711]
+                          - text: 2023.06-2025.06(2年)
+                    - generic [ref=e2712]:
+                      - generic [ref=e2713]:
+                        - img [ref=e2714]:
+                          - img [ref=e2715]
+                        - generic "电子科技大学 · 计算机科学与技术 · 本科 · 非统招 2019.09-2022.01(3年)" [ref=e2717]:
+                          - generic [ref=e2718]: 电子科技大学
+                          - emphasis [ref=e2719]
+                          - generic [ref=e2720]:
+                            - text: 计算机科学与技术
+                            - emphasis [ref=e2721]
+                            - text: 本科
+                            - emphasis [ref=e2722]
+                            - text: 非统招
+                            - emphasis [ref=e2723]
+                            - text: 2019.09-2022.01(3年)
+                      - generic "湘潭大学 · 机械电子工程/机电一体化 · 大专 · 统招 2008.09-2011.06(3年)" [ref=e2725]:
+                        - generic [ref=e2726]: 湘潭大学
+                        - emphasis [ref=e2727]
+                        - generic [ref=e2728]:
+                          - text: 机械电子工程/机电一体化
+                          - emphasis [ref=e2729]
+                          - text: 大专
+                          - emphasis [ref=e2730]
+                          - text: 统招
+                          - emphasis [ref=e2731]
+                          - text: 2008.09-2011.06(3年)
+                  - button "立即沟通" [ref=e2734]:
+                    - generic [ref=e2735]: 立即沟通
+              - listitem [ref=e2736] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2738]:
+                  - generic [ref=e2739]:
+                    - generic [ref=e2740]:
+                      - main [ref=e2741]:
+                        - img "头像" [ref=e2742]
+                      - emphasis [ref=e2744]: 3天内活跃
+                    - generic [ref=e2745]:
+                      - generic [ref=e2746]:
+                        - emphasis [ref=e2747]: 董**
+                        - img [ref=e2748]:
+                          - img [ref=e2749]
+                      - generic [ref=e2756]:
+                        - generic "28岁" [ref=e2757]
+                        - generic "2年" [ref=e2758]
+                        - generic "硕士" [ref=e2759]
+                        - generic "西安" [ref=e2760]
+                      - generic [ref=e2761]:
+                        - emphasis [ref=e2762]: 期望：
+                        - generic "上海 Python 17-25K·14薪" [ref=e2763]: 上海Python17-25K·14薪
+                      - generic [ref=e2764]:
+                        - generic [ref=e2765]: 广告/公关/会展
+                        - generic [ref=e2766]: 芯片验证
+                        - generic [ref=e2767]: 编程设计
+                        - generic [ref=e2768]: ｃ+ +
+                        - generic [ref=e2769]: Python
+                  - generic [ref=e2771]:
+                    - generic [ref=e2772]:
+                      - generic [ref=e2773]:
+                        - img [ref=e2774]:
+                          - img [ref=e2775]
+                        - generic [ref=e2777]:
+                          - generic "苏州光印网络科技有限公司" [ref=e2778]
+                          - emphasis [ref=e2779]
+                          - generic [ref=e2780]:
+                            - generic "agent开发工程师" [ref=e2781]
+                            - emphasis [ref=e2782]
+                            - text: 2025.03-至今(1年)
+                      - generic [ref=e2784]:
+                        - generic "科锐" [ref=e2785]
+                        - emphasis [ref=e2786]
+                        - generic [ref=e2787]:
+                          - text: Python软件工程师
+                          - emphasis [ref=e2788]
+                          - text: 2023.10-2024.12(1年2个月)
+                    - generic [ref=e2789]:
+                      - generic [ref=e2790]:
+                        - img [ref=e2791]:
+                          - img [ref=e2792]
+                        - generic "西北大学 · 理论物理 · 硕士 · 统招 2020.09-2023.07(3年)" [ref=e2794]:
+                          - generic [ref=e2795]: 西北大学
+                          - emphasis [ref=e2796]
+                          - generic [ref=e2797]:
+                            - text: 理论物理
+                            - emphasis [ref=e2798]
+                            - text: 硕士
+                            - emphasis [ref=e2799]
+                            - text: 统招
+                            - emphasis [ref=e2800]
+                            - text: 2020.09-2023.07(3年)
+                      - generic "西北大学 · 物理学 · 本科 · 统招 2016.09-2020.07(4年)" [ref=e2802]:
+                        - generic [ref=e2803]: 西北大学
+                        - emphasis [ref=e2804]
+                        - generic [ref=e2805]:
+                          - text: 物理学
+                          - emphasis [ref=e2806]
+                          - text: 本科
+                          - emphasis [ref=e2807]
+                          - text: 统招
+                          - emphasis [ref=e2808]
+                          - text: 2016.09-2020.07(4年)
+                  - button "立即沟通" [ref=e2811]:
+                    - generic [ref=e2812]: 立即沟通
+              - listitem [ref=e2813] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2815]:
+                  - generic [ref=e2816]:
+                    - generic [ref=e2817]:
+                      - main [ref=e2818]:
+                        - img "头像" [ref=e2819]
+                      - emphasis [ref=e2821]: 3天内活跃
+                    - generic [ref=e2822]:
+                      - generic [ref=e2823]:
+                        - emphasis [ref=e2824]: 袁**
+                        - img [ref=e2825]:
+                          - img [ref=e2826]
+                      - generic [ref=e2833]:
+                        - generic "24岁" [ref=e2834]
+                        - generic "1年" [ref=e2835]
+                        - generic "本科" [ref=e2836]
+                        - generic "东莞" [ref=e2837]
+                      - generic [ref=e2838]:
+                        - emphasis [ref=e2839]: 期望：
+                        - generic "广州 算法工程师 16-18K·13薪" [ref=e2840]: 广州算法工程师16-18K·13薪
+                      - generic [ref=e2842]: 游戏
+                  - generic [ref=e2844]:
+                    - generic [ref=e2845]:
+                      - generic [ref=e2846]:
+                        - img [ref=e2847]:
+                          - img [ref=e2848]
+                        - generic [ref=e2850]:
+                          - generic "广州天镜互游科技有限公司" [ref=e2851]
+                          - emphasis [ref=e2852]
+                          - generic [ref=e2853]:
+                            - generic "Agent 组 Agent 开发工程师" [ref=e2854]
+                            - emphasis [ref=e2855]
+                            - text: 2024.12-至今(1年3个月)
+                      - generic [ref=e2857]:
+                        - generic "广东德尔智慧科技股份有限公司" [ref=e2858]
+                        - emphasis [ref=e2859]
+                        - generic [ref=e2860]:
+                          - text: 研究院 算法工程师
+                          - emphasis [ref=e2861]
+                          - text: 2024.07-2024.10(3个月)
+                    - generic [ref=e2863]:
+                      - img [ref=e2864]:
+                        - img [ref=e2865]
+                      - generic "合肥工业大学 · 电气工程及其自动化 · 本科 · 统招 2020.09-2024.07(4年)" [ref=e2867]:
+                        - generic [ref=e2868]: 合肥工业大学
+                        - emphasis [ref=e2869]
+                        - generic [ref=e2870]:
+                          - text: 电气工程及其自动化
+                          - emphasis [ref=e2871]
+                          - text: 本科
+                          - emphasis [ref=e2872]
+                          - text: 统招
+                          - emphasis [ref=e2873]
+                          - text: 2020.09-2024.07(4年)
+                  - button "立即沟通" [ref=e2876]:
+                    - generic [ref=e2877]: 立即沟通
+              - listitem [ref=e2878] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2880]:
+                  - generic [ref=e2881]:
+                    - generic [ref=e2882]:
+                      - main [ref=e2883]:
+                        - img "头像" [ref=e2884]
+                      - emphasis [ref=e2886]: 今天活跃
+                    - generic [ref=e2887]:
+                      - generic [ref=e2888]:
+                        - emphasis [ref=e2889]: 曹**
+                        - img [ref=e2890]:
+                          - img [ref=e2891]
+                      - generic [ref=e2898]:
+                        - generic "30岁" [ref=e2899]
+                        - generic "6年" [ref=e2900]
+                        - generic "硕士" [ref=e2901]
+                        - generic "武汉" [ref=e2902]
+                      - generic [ref=e2903]:
+                        - emphasis [ref=e2904]: 期望：
+                        - generic "武汉 数据挖掘工程师 17-20K·13薪" [ref=e2905]: 武汉数据挖掘工程师17-20K·13薪
+                      - generic [ref=e2907]: IT服务
+                  - generic [ref=e2909]:
+                    - generic [ref=e2910]:
+                      - generic [ref=e2911]:
+                        - img [ref=e2912]:
+                          - img [ref=e2913]
+                        - generic [ref=e2915]:
+                          - generic "武汉光庭信息技术股份有限公司" [ref=e2916]
+                          - emphasis [ref=e2917]
+                          - generic [ref=e2918]:
+                            - generic "agent开发工程师" [ref=e2919]
+                            - emphasis [ref=e2920]
+                            - text: 2025.02-2025.05(3个月)
+                      - generic [ref=e2922]:
+                        - generic "深圳前海微众银行股份有限公司" [ref=e2923]
+                        - emphasis [ref=e2924]
+                        - generic [ref=e2925]:
+                          - text: 数据测试工程师
+                          - emphasis [ref=e2926]
+                          - text: 2023.10-2025.02(1年4个月)
+                    - generic [ref=e2927]:
+                      - generic [ref=e2928]:
+                        - img [ref=e2929]:
+                          - img [ref=e2930]
+                        - generic "伯明翰大学 · 网络安全 · 硕士 · 统招 2018.07-2019.10(1年)" [ref=e2932]:
+                          - generic [ref=e2933]: 伯明翰大学
+                          - emphasis [ref=e2934]
+                          - generic [ref=e2935]:
+                            - text: 网络安全
+                            - emphasis [ref=e2936]
+                            - text: 硕士
+                            - emphasis [ref=e2937]
+                            - text: 统招
+                            - emphasis [ref=e2938]
+                            - text: 2018.07-2019.10(1年)
+                      - generic "华中农业大学 · 信息与计算科学 · 本科 · 统招 2014.09-2018.06(4年)" [ref=e2940]:
+                        - generic [ref=e2941]: 华中农业大学
+                        - emphasis [ref=e2942]
+                        - generic [ref=e2943]:
+                          - text: 信息与计算科学
+                          - emphasis [ref=e2944]
+                          - text: 本科
+                          - emphasis [ref=e2945]
+                          - text: 统招
+                          - emphasis [ref=e2946]
+                          - text: 2014.09-2018.06(4年)
+                  - button "立即沟通" [ref=e2949]:
+                    - generic [ref=e2950]: 立即沟通
+              - listitem [ref=e2951] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e2953]:
+                  - generic [ref=e2954]:
+                    - generic [ref=e2955]:
+                      - main [ref=e2956]:
+                        - img "头像" [ref=e2957]
+                      - emphasis [ref=e2959]: 3天内活跃
+                    - generic [ref=e2960]:
+                      - generic [ref=e2961]:
+                        - emphasis [ref=e2962]: 周**
+                        - img [ref=e2963]:
+                          - img [ref=e2964]
+                      - generic [ref=e2971]:
+                        - generic "21岁" [ref=e2972]
+                        - generic "2026年毕业" [ref=e2973]
+                        - generic "本科" [ref=e2974]
+                        - generic "长沙" [ref=e2975]
+                      - generic [ref=e2976]:
+                        - emphasis [ref=e2977]: 期望：
+                        - generic "长沙 Python/爬虫 15-17K" [ref=e2978]: 长沙Python/爬虫15-17K
+                      - generic [ref=e2980]: 互联网
+                  - generic [ref=e2982]:
+                    - generic [ref=e2984]:
+                      - img [ref=e2985]:
+                        - img [ref=e2986]
+                      - generic [ref=e2988]:
+                        - generic "博彦科技" [ref=e2989]
+                        - emphasis [ref=e2990]
+                        - generic [ref=e2991]:
+                          - generic "agent开发工程师" [ref=e2992]
+                          - emphasis [ref=e2993]
+                          - text: 2025.04-2026.03(11个月)
+                    - generic [ref=e2995]:
+                      - img [ref=e2996]:
+                        - img [ref=e2997]
+                      - generic "中南林业科技大学 · 软件工程 · 本科 · 统招 2022.09-2026.06(4年)" [ref=e2999]:
+                        - generic [ref=e3000]: 中南林业科技大学
+                        - emphasis [ref=e3001]
+                        - generic [ref=e3002]:
+                          - text: 软件工程
+                          - emphasis [ref=e3003]
+                          - text: 本科
+                          - emphasis [ref=e3004]
+                          - text: 统招
+                          - emphasis [ref=e3005]
+                          - text: 2022.09-2026.06(4年)
+                  - button "立即沟通" [ref=e3008]:
+                    - generic [ref=e3009]: 立即沟通
+              - listitem [ref=e3010] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3012]:
+                  - generic [ref=e3013]:
+                    - generic [ref=e3014]:
+                      - main [ref=e3015]:
+                        - img "头像" [ref=e3016]
+                      - emphasis [ref=e3018]: 3天内活跃
+                    - generic [ref=e3019]:
+                      - generic [ref=e3020]:
+                        - emphasis [ref=e3021]: 黄**
+                        - img [ref=e3022]:
+                          - img [ref=e3023]
+                      - generic [ref=e3029]:
+                        - generic "28岁" [ref=e3030]
+                        - generic "3年" [ref=e3031]
+                        - generic "硕士" [ref=e3032]
+                        - generic "上海" [ref=e3033]
+                      - generic [ref=e3034]:
+                        - emphasis [ref=e3035]: 期望：
+                        - generic "上海 大模型算法 40-45K·14薪" [ref=e3036]: 上海大模型算法40-45K·14薪
+                      - generic [ref=e3038]: 计算机软件
+                  - generic [ref=e3040]:
+                    - generic [ref=e3042]:
+                      - img [ref=e3043]:
+                        - img [ref=e3044]
+                      - generic [ref=e3046]:
+                        - generic "英特尔亚太研发有限公司" [ref=e3047]
+                        - emphasis [ref=e3048]
+                        - generic [ref=e3049]:
+                          - generic "AI Agent 开发工程师" [ref=e3050]
+                          - emphasis [ref=e3051]
+                          - text: 2022.07-至今(3年8个月)
+                    - generic [ref=e3052]:
+                      - generic [ref=e3053]:
+                        - img [ref=e3054]:
+                          - img [ref=e3055]
+                        - generic "华中科技大学 · 信息与通信工程 · 硕士 · 统招 2019.09-2022.06(3年)" [ref=e3057]:
+                          - generic [ref=e3058]: 华中科技大学
+                          - emphasis [ref=e3059]
+                          - generic [ref=e3060]:
+                            - text: 信息与通信工程
+                            - emphasis [ref=e3061]
+                            - text: 硕士
+                            - emphasis [ref=e3062]
+                            - text: 统招
+                            - emphasis [ref=e3063]
+                            - text: 2019.09-2022.06(3年)
+                      - generic "华中科技大学 · 通信工程 · 本科 · 统招 2015.09-2019.06(4年)" [ref=e3065]:
+                        - generic [ref=e3066]: 华中科技大学
+                        - emphasis [ref=e3067]
+                        - generic [ref=e3068]:
+                          - text: 通信工程
+                          - emphasis [ref=e3069]
+                          - text: 本科
+                          - emphasis [ref=e3070]
+                          - text: 统招
+                          - emphasis [ref=e3071]
+                          - text: 2015.09-2019.06(4年)
+                  - button "立即沟通" [ref=e3074]:
+                    - generic [ref=e3075]: 立即沟通
+              - listitem [ref=e3076] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3078]:
+                  - generic [ref=e3079]:
+                    - generic [ref=e3080]:
+                      - main [ref=e3081]:
+                        - img "头像" [ref=e3082]
+                      - emphasis [ref=e3084]: 3天内活跃
+                    - generic [ref=e3085]:
+                      - generic [ref=e3086]:
+                        - emphasis [ref=e3087]: 杨**
+                        - img [ref=e3088]:
+                          - img [ref=e3089]
+                      - generic [ref=e3096]:
+                        - generic "34岁" [ref=e3097]
+                        - generic "11年" [ref=e3098]
+                        - generic "本科" [ref=e3099]
+                        - generic "南京" [ref=e3100]
+                      - generic [ref=e3101]:
+                        - emphasis [ref=e3102]: 期望：
+                        - generic "南京 Java 18-35K·14薪" [ref=e3103]: 南京Java18-35K·14薪
+                      - generic [ref=e3105]: 人工智能
+                  - generic [ref=e3107]:
+                    - generic [ref=e3108]:
+                      - generic [ref=e3109]:
+                        - img [ref=e3110]:
+                          - img [ref=e3111]
+                        - generic [ref=e3113]:
+                          - generic "斑码AI" [ref=e3114]
+                          - emphasis [ref=e3115]
+                          - generic [ref=e3116]:
+                            - generic "技术合伙人，AI Agent开发工程师" [ref=e3117]
+                            - emphasis [ref=e3118]
+                            - text: 2025.05-至今(10个月)
+                      - generic [ref=e3120]:
+                        - generic "中国联通-云网运营事业部" [ref=e3121]
+                        - emphasis [ref=e3122]
+                        - generic [ref=e3123]:
+                          - text: TL,高级 Java 开发工程师
+                          - emphasis [ref=e3124]
+                          - text: 2021.06-至今(4年9个月)
+                      - generic [ref=e3126]:
+                        - generic "掌众金融" [ref=e3127]
+                        - emphasis [ref=e3128]
+                        - generic [ref=e3129]:
+                          - text: 高级 Java 开发工程师
+                          - emphasis [ref=e3130]
+                          - text: 2020.07-2021.03(8个月)
+                    - generic [ref=e3132]:
+                      - img [ref=e3133]:
+                        - img [ref=e3134]
+                      - generic "南京邮电大学 · 电子信息工程 · 本科 · 统招 2010.09-2014.06(4年)" [ref=e3136]:
+                        - generic [ref=e3137]: 南京邮电大学
+                        - emphasis [ref=e3138]
+                        - generic [ref=e3139]:
+                          - text: 电子信息工程
+                          - emphasis [ref=e3140]
+                          - text: 本科
+                          - emphasis [ref=e3141]
+                          - text: 统招
+                          - emphasis [ref=e3142]
+                          - text: 2010.09-2014.06(4年)
+                  - button "立即沟通" [ref=e3145]:
+                    - generic [ref=e3146]: 立即沟通
+              - listitem [ref=e3147] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3149]:
+                  - generic [ref=e3150]:
+                    - generic [ref=e3151]:
+                      - main [ref=e3152]:
+                        - img "头像" [ref=e3153]
+                      - emphasis [ref=e3155]: 3天内活跃
+                    - generic [ref=e3156]:
+                      - generic [ref=e3157]:
+                        - emphasis [ref=e3158]: 陈**
+                        - img [ref=e3159]:
+                          - img [ref=e3160]
+                      - generic [ref=e3167]:
+                        - generic "25岁" [ref=e3168]
+                        - generic "3年" [ref=e3169]
+                        - generic "本科" [ref=e3170]
+                        - generic "深圳" [ref=e3171]
+                      - generic [ref=e3172]:
+                        - emphasis [ref=e3173]: 期望：
+                        - generic "深圳 Python 25-30K·13薪" [ref=e3174]: 深圳Python25-30K·13薪
+                      - generic [ref=e3176]: 互联网
+                  - generic [ref=e3178]:
+                    - generic [ref=e3179]:
+                      - generic [ref=e3180]:
+                        - img [ref=e3181]:
+                          - img [ref=e3182]
+                        - generic [ref=e3184]:
+                          - generic "深圳市天裳科技有限公司" [ref=e3185]
+                          - emphasis [ref=e3186]
+                          - generic [ref=e3187]:
+                            - generic "Agent开发工程师" [ref=e3188]
+                            - emphasis [ref=e3189]
+                            - text: 2024.06-至今(1年9个月)
+                      - generic [ref=e3191]:
+                        - generic "新旦智能科技有限公司" [ref=e3192]
+                        - emphasis [ref=e3193]
+                        - generic [ref=e3194]:
+                          - generic "Agent 开发工程师" [ref=e3195]
+                          - emphasis [ref=e3196]
+                          - text: 2023.06-2024.06(1年)
+                      - generic [ref=e3198]:
+                        - generic "江西微博科技有限公司" [ref=e3199]
+                        - emphasis [ref=e3200]
+                        - generic [ref=e3201]:
+                          - text: Java开发工程师
+                          - emphasis [ref=e3202]
+                          - text: 2022.06-2022.09(3个月)
+                    - generic [ref=e3204]:
+                      - img [ref=e3205]:
+                        - img [ref=e3206]
+                      - generic "新余学院 · 数据科学与大数据技术 · 本科 · 统招 2020.09-2024.07(4年)" [ref=e3208]:
+                        - generic [ref=e3209]: 新余学院
+                        - emphasis [ref=e3210]
+                        - generic [ref=e3211]:
+                          - text: 数据科学与大数据技术
+                          - emphasis [ref=e3212]
+                          - text: 本科
+                          - emphasis [ref=e3213]
+                          - text: 统招
+                          - emphasis [ref=e3214]
+                          - text: 2020.09-2024.07(4年)
+                  - button "立即沟通" [ref=e3217]:
+                    - generic [ref=e3218]: 立即沟通
+              - listitem [ref=e3219] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3221]:
+                  - generic [ref=e3222]:
+                    - generic [ref=e3223]:
+                      - main [ref=e3224]:
+                        - img "头像" [ref=e3225]
+                      - emphasis [ref=e3227]: 3天内活跃
+                    - generic [ref=e3228]:
+                      - generic [ref=e3229]:
+                        - emphasis [ref=e3230]: 魏**
+                        - img [ref=e3231]:
+                          - img [ref=e3232]
+                      - generic [ref=e3239]:
+                        - generic "29岁" [ref=e3240]
+                        - generic "8年" [ref=e3241]
+                        - generic "硕士" [ref=e3242]
+                        - generic "北京" [ref=e3243]
+                      - generic [ref=e3244]:
+                        - emphasis [ref=e3245]: 期望：
+                        - generic "北京 算法工程师 20-25K·13薪" [ref=e3246]: 北京算法工程师20-25K·13薪
+                      - generic [ref=e3248]: 互联网
+                  - generic [ref=e3250]:
+                    - generic [ref=e3251]:
+                      - generic [ref=e3252]:
+                        - img [ref=e3253]:
+                          - img [ref=e3254]
+                        - generic [ref=e3256]:
+                          - generic "北京先手网络科技有限公司" [ref=e3257]
+                          - emphasis [ref=e3258]
+                          - generic [ref=e3259]:
+                            - generic "Agent开发工程师" [ref=e3260]
+                            - emphasis [ref=e3261]
+                            - text: 2025.08-至今(7个月)
+                      - generic [ref=e3263]:
+                        - generic "度小满科技（北京）有限公司（驻场）" [ref=e3264]
+                        - emphasis [ref=e3265]
+                        - generic [ref=e3266]:
+                          - text: 大数据开发工程师
+                          - emphasis [ref=e3267]
+                          - text: 2023.10-2025.08(1年10个月)
+                      - generic [ref=e3269]:
+                        - generic "海南航空股份有限公司" [ref=e3270]
+                        - emphasis [ref=e3271]
+                        - generic [ref=e3272]:
+                          - text: 航材保障工程师
+                          - emphasis [ref=e3273]
+                          - text: 2017.06-2022.09(5年3个月)
+                    - generic [ref=e3275]:
+                      - img [ref=e3276]:
+                        - img [ref=e3277]
+                      - generic "北京科技大学 · 工程管理 · 硕士 · 统招 2025.08-2027.06(2年)" [ref=e3279]:
+                        - generic [ref=e3280]: 北京科技大学
+                        - emphasis [ref=e3281]
+                        - generic [ref=e3282]:
+                          - text: 工程管理
+                          - emphasis [ref=e3283]
+                          - text: 硕士
+                          - emphasis [ref=e3284]
+                          - text: 统招
+                          - emphasis [ref=e3285]
+                          - text: 2025.08-2027.06(2年)
+                  - button "立即沟通" [ref=e3288]:
+                    - generic [ref=e3289]: 立即沟通
+              - listitem [ref=e3290] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3292]:
+                  - generic [ref=e3293]:
+                    - generic [ref=e3294]:
+                      - main [ref=e3295]:
+                        - img "头像" [ref=e3296]
+                      - emphasis [ref=e3298]: 7天内活跃
+                    - generic [ref=e3299]:
+                      - generic [ref=e3300]:
+                        - emphasis [ref=e3301]: 曹**
+                        - img [ref=e3302]:
+                          - img [ref=e3303]
+                      - generic [ref=e3310]:
+                        - generic "23岁" [ref=e3311]
+                        - generic "2027年毕业" [ref=e3312]
+                        - generic "硕士" [ref=e3313]
+                        - generic "苏州" [ref=e3314]
+                      - generic [ref=e3315]:
+                        - emphasis [ref=e3316]: 期望：
+                        - generic "苏州 软件开发 200-400元/天" [ref=e3317]: 苏州软件开发200-400元/天
+                      - generic [ref=e3319]: 人工智能
+                  - generic [ref=e3321]:
+                    - generic [ref=e3322]:
+                      - generic [ref=e3323]:
+                        - img [ref=e3324]:
+                          - img [ref=e3325]
+                        - generic [ref=e3327]:
+                          - generic "bilibili" [ref=e3328]
+                          - emphasis [ref=e3329]
+                          - generic [ref=e3330]:
+                            - generic "Agent 开发工程师" [ref=e3331]
+                            - emphasis [ref=e3332]
+                            - text: 2025.12-至今(3个月)
+                      - generic [ref=e3334]:
+                        - generic "Momenta" [ref=e3335]
+                        - emphasis [ref=e3336]
+                        - generic [ref=e3337]:
+                          - text: 后端开发工程师
+                          - emphasis [ref=e3338]
+                          - text: 2025.03-至今(1年)
+                    - generic [ref=e3339]:
+                      - generic [ref=e3340]:
+                        - img [ref=e3341]:
+                          - img [ref=e3342]
+                        - generic "苏州大学 · 人工智能 · 硕士 · 统招 2024.09-2027.07(3年)" [ref=e3344]:
+                          - generic [ref=e3345]: 苏州大学
+                          - emphasis [ref=e3346]
+                          - generic [ref=e3347]:
+                            - text: 人工智能
+                            - emphasis [ref=e3348]
+                            - text: 硕士
+                            - emphasis [ref=e3349]
+                            - text: 统招
+                            - emphasis [ref=e3350]
+                            - text: 2024.09-2027.07(3年)
+                      - generic "山东科技大学 · 大数据管理与应用 · 本科 · 统招 2020.09-2024.07(4年)" [ref=e3352]:
+                        - generic [ref=e3353]: 山东科技大学
+                        - emphasis [ref=e3354]
+                        - generic [ref=e3355]:
+                          - text: 大数据管理与应用
+                          - emphasis [ref=e3356]
+                          - text: 本科
+                          - emphasis [ref=e3357]
+                          - text: 统招
+                          - emphasis [ref=e3358]
+                          - text: 2020.09-2024.07(4年)
+                  - button "立即沟通" [ref=e3361]:
+                    - generic [ref=e3362]: 立即沟通
+              - listitem [ref=e3363] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3365]:
+                  - generic [ref=e3366]:
+                    - generic [ref=e3367]:
+                      - main [ref=e3368]:
+                        - img "头像" [ref=e3369]
+                      - emphasis [ref=e3371]: 30天内活跃
+                    - generic [ref=e3372]:
+                      - generic [ref=e3373]:
+                        - emphasis [ref=e3374]: 于**
+                        - img [ref=e3375]:
+                          - img [ref=e3376]
+                      - generic [ref=e3383]:
+                        - generic "21岁" [ref=e3384]
+                        - generic "1年以下" [ref=e3385]
+                        - generic "本科" [ref=e3386]
+                        - generic "清远-清城区" [ref=e3387]
+                      - generic [ref=e3388]:
+                        - emphasis [ref=e3389]: 期望：
+                        - generic "清远 Python 8-13K" [ref=e3390]: 清远Python8-13K
+                      - generic [ref=e3392]: AI/互联网/IT
+                  - generic [ref=e3394]:
+                    - generic [ref=e3396]:
+                      - img [ref=e3397]:
+                        - img [ref=e3398]
+                      - generic [ref=e3400]:
+                        - generic "广东一二三" [ref=e3401]
+                        - emphasis [ref=e3402]
+                        - generic [ref=e3403]:
+                          - generic "agent开发工程师" [ref=e3404]
+                          - emphasis [ref=e3405]
+                          - text: 2025.04-2026.02(10个月)
+                    - generic [ref=e3407]:
+                      - img [ref=e3408]:
+                        - img [ref=e3409]
+                      - generic "广州现代信息工程职业技术学院 · 计算机科学与技术 · 本科 · 统招 2022.09-2025.06(3年)" [ref=e3411]:
+                        - generic [ref=e3412]: 广州现代信息工程职业技术学院
+                        - emphasis [ref=e3413]
+                        - generic [ref=e3414]:
+                          - text: 计算机科学与技术
+                          - emphasis [ref=e3415]
+                          - text: 本科
+                          - emphasis [ref=e3416]
+                          - text: 统招
+                          - emphasis [ref=e3417]
+                          - text: 2022.09-2025.06(3年)
+                  - button "立即沟通" [ref=e3420]:
+                    - generic [ref=e3421]: 立即沟通
+              - listitem [ref=e3422] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3424]:
+                  - generic [ref=e3425]:
+                    - generic [ref=e3426]:
+                      - main [ref=e3427]:
+                        - img "头像" [ref=e3428]
+                      - emphasis [ref=e3430]: 7天内活跃
+                    - generic [ref=e3431]:
+                      - generic [ref=e3432]:
+                        - emphasis [ref=e3433]: 魏**
+                        - img [ref=e3434]:
+                          - img [ref=e3435]
+                      - generic [ref=e3441]:
+                        - generic "25岁" [ref=e3442]
+                        - generic "1年以下" [ref=e3443]
+                        - generic "硕士" [ref=e3444]
+                        - generic "上海-杨浦区" [ref=e3445]
+                      - generic [ref=e3446]:
+                        - emphasis [ref=e3447]: 期望：
+                        - generic "上海 数据标注/AI训练师 18-25K·15薪" [ref=e3448]: 上海数据标注/AI训练师18-25K·15薪
+                      - generic [ref=e3449]:
+                        - generic [ref=e3450]: 医疗机构
+                        - generic [ref=e3451]: dify
+                  - generic [ref=e3453]:
+                    - generic [ref=e3454]:
+                      - generic [ref=e3455]:
+                        - img [ref=e3456]:
+                          - img [ref=e3457]
+                        - generic [ref=e3459]:
+                          - generic "梅斯医学" [ref=e3460]
+                          - emphasis [ref=e3461]
+                          - generic [ref=e3462]:
+                            - generic "Agent开发工程师" [ref=e3463]
+                            - emphasis [ref=e3464]
+                            - text: 2025.08-至今(7个月)
+                      - generic [ref=e3466]:
+                        - generic "赛诺菲" [ref=e3467]
+                        - emphasis [ref=e3468]
+                        - generic [ref=e3469]:
+                          - text: 市场实习生
+                          - emphasis [ref=e3470]
+                          - text: 2023.03-2023.07(4个月)
+                    - generic [ref=e3471]:
+                      - generic [ref=e3472]:
+                        - img [ref=e3473]:
+                          - img [ref=e3474]
+                        - generic "同济大学 · 生物信息与人工智能 · 硕士 · 统招 2022.09-2025.06(3年)" [ref=e3476]:
+                          - generic [ref=e3477]: 同济大学
+                          - emphasis [ref=e3478]
+                          - generic [ref=e3479]:
+                            - text: 生物信息与人工智能
+                            - emphasis [ref=e3480]
+                            - text: 硕士
+                            - emphasis [ref=e3481]
+                            - text: 统招
+                            - emphasis [ref=e3482]
+                            - text: 2022.09-2025.06(3年)
+                      - generic "同济大学 · 生物信息学 · 本科 · 统招 2018.09-2022.06(4年)" [ref=e3484]:
+                        - generic [ref=e3485]: 同济大学
+                        - emphasis [ref=e3486]
+                        - generic [ref=e3487]:
+                          - text: 生物信息学
+                          - emphasis [ref=e3488]
+                          - text: 本科
+                          - emphasis [ref=e3489]
+                          - text: 统招
+                          - emphasis [ref=e3490]
+                          - text: 2018.09-2022.06(4年)
+                  - button "立即沟通" [ref=e3493]:
+                    - generic [ref=e3494]: 立即沟通
+              - listitem [ref=e3495] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - checkbox
+                - generic [ref=e3497]:
+                  - generic [ref=e3498]:
+                    - generic [ref=e3499]:
+                      - main [ref=e3500]:
+                        - img "头像" [ref=e3501]
+                      - emphasis [ref=e3503]: 7天内活跃
+                    - generic [ref=e3504]:
+                      - generic [ref=e3505]:
+                        - emphasis [ref=e3506]: 李**
+                        - img [ref=e3507]:
+                          - img [ref=e3508]
+                      - generic [ref=e3515]:
+                        - generic "26岁" [ref=e3516]
+                        - generic "2026年毕业" [ref=e3517]
+                        - generic "硕士" [ref=e3518]
+                        - generic "上海" [ref=e3519]
+                      - generic [ref=e3520]:
+                        - emphasis [ref=e3521]: 期望：
+                        - generic "上海 算法 25-35K" [ref=e3522]: 上海算法25-35K
+                      - generic [ref=e3524]: 计算机软件
+                  - generic [ref=e3526]:
+                    - generic [ref=e3527]:
+                      - generic [ref=e3528]:
+                        - img [ref=e3529]:
+                          - img [ref=e3530]
+                        - generic [ref=e3532]:
+                          - generic "宜家家居" [ref=e3533]
+                          - emphasis [ref=e3534]
+                          - generic [ref=e3535]:
+                            - generic "Agent开发工程师" [ref=e3536]
+                            - emphasis [ref=e3537]
+                            - text: 2025.09-2025.12(3个月)
+                      - generic [ref=e3539]:
+                        - generic "国泰海通证券" [ref=e3540]
+                        - emphasis [ref=e3541]
+                        - generic [ref=e3542]:
+                          - text: AI算法工程师
+                          - emphasis [ref=e3543]
+                          - text: 2025.07-2025.08(1个月)
+                    - generic [ref=e3544]:
+                      - generic [ref=e3545]:
+                        - img [ref=e3546]:
+                          - img [ref=e3547]
+                        - generic "香港科技大学 · 数据驱动建模 · 硕士 · 统招 2024.09-2026.01(2年)" [ref=e3549]:
+                          - generic [ref=e3550]: 香港科技大学
+                          - emphasis [ref=e3551]
+                          - generic [ref=e3552]:
+                            - text: 数据驱动建模
+                            - emphasis [ref=e3553]
+                            - text: 硕士
+                            - emphasis [ref=e3554]
+                            - text: 统招
+                            - emphasis [ref=e3555]
+                            - text: 2024.09-2026.01(2年)
+                      - generic "中山大学 · 材料物理 · 本科 · 统招 2017.09-2021.06(4年)" [ref=e3557]:
+                        - generic [ref=e3558]: 中山大学
+                        - emphasis [ref=e3559]
+                        - generic [ref=e3560]:
+                          - text: 材料物理
+                          - emphasis [ref=e3561]
+                          - text: 本科
+                          - emphasis [ref=e3562]
+                          - text: 统招
+                          - emphasis [ref=e3563]
+                          - text: 2017.09-2021.06(4年)
+                  - button "立即沟通" [ref=e3566]:
+                    - generic [ref=e3567]: 立即沟通
+            - generic [ref=e3595]:
+              - generic [ref=e3596] [cursor=pointer]:
+                - checkbox "全选" [ref=e3598]
+                - generic [ref=e3600]: 全选
+              - button "浏览简历" [ref=e3601] [cursor=pointer]:
+                - generic [ref=e3602]: 浏览简历
+  - generic [ref=e1783] [cursor=pointer]:
+    - img [ref=e1784]
+    - emphasis [ref=e1787]: "1"
+  - tooltip "close 你有2条未读通知 点击查看" [ref=e1790]:
+    - generic [ref=e1792]:
+      - button "close" [ref=e1793] [cursor=pointer]:
+        - img "close" [ref=e1794]:
+          - img [ref=e1795]
+      - img [ref=e1797]:
+        - img [ref=e1798]
+      - generic [ref=e1802]: 你有2条未读通知
+      - button "点击查看" [ref=e1803] [cursor=pointer]:
+        - generic [ref=e1804]: 点击查看
+  - tooltip "AI快读新升级，更懂招聘更懂你~ close 增加调整快读要求功能，推荐简历更合心意 单次快读上限增加至1000份 我知道了" [ref=e3605]:
+    - generic [ref=e3607]:
+      - generic [ref=e3608]:
+        - img [ref=e3609]:
+          - img [ref=e3610]
+        - generic [ref=e3621]: AI快读新升级，更懂招聘更懂你~
+        - button "close" [ref=e3622] [cursor=pointer]:
+          - img "close" [ref=e3623]:
+            - img [ref=e3624]
+      - list [ref=e3626]:
+        - listitem [ref=e3627]: 增加调整快读要求功能，推荐简历更合心意
+        - listitem [ref=e3628]: 单次快读上限增加至1000份
+      - button "我知道了" [ref=e3630] [cursor=pointer]:
+        - generic [ref=e3631]: 我知道了
+  - generic [ref=e3633]:
+    - dialog:
+      - generic [ref=e3635]:
+        - generic [active] [ref=e3636]:
+          - generic [ref=e3641]:
+            - img [ref=e3644] [cursor=pointer]:
+              - img [ref=e3645]
+            - img "close" [ref=e3651] [cursor=pointer]:
+              - img [ref=e3652]
+          - generic [ref=e3656]:
+            - complementary [ref=e3658]:
+              - alert [ref=e3659]:
+                - generic [ref=e3662]:
+                  - img [ref=e3663]:
+                    - img [ref=e3664]
+                  - generic [ref=e3666]: 该人选为行业高端人才，通过专业顾问发起意向沟通，更易建立人选好感哦。
+                  - link "发起意向沟通" [ref=e3667] [cursor=pointer]:
+                    - /url: https://msk.liepin.com/intention/order/addorder/?resIdEncode=9fefeb638cS491dca7f946e&ejobId=&imscid=R000303066
+                    - generic [ref=e3668]: 发起意向沟通
+              - generic [ref=e3669]:
+                - generic [ref=e3670]:
+                  - generic [ref=e3671]:
+                    - img "Photo" [ref=e3672]
+                    - generic [ref=e3673] [cursor=pointer]: 查看大图
+                  - img [ref=e3674]
+                - generic [ref=e3682]:
+                  - generic [ref=e3683]:
+                    - generic [ref=e3684]:
+                      - generic "尹**" [ref=e3685]
+                      - generic [ref=e3686]: 今天活跃
+                    - generic [ref=e3687]: 更新简历时间：2026.03.17
+                  - generic [ref=e3688]:
+                    - generic [ref=e3689]:
+                      - generic [ref=e3690]:
+                        - img "environment" [ref=e3692]:
+                          - img [ref=e3693]
+                        - generic "北京-朝阳区" [ref=e3695]
+                      - generic [ref=e3696]:
+                        - img "work" [ref=e3698]:
+                          - img [ref=e3699]
+                        - generic "工作4年" [ref=e3701]
+                      - generic [ref=e3702]:
+                        - img "birthday" [ref=e3704]:
+                          - img [ref=e3705]
+                        - generic [ref=e3707]: 31 岁
+                      - generic [ref=e3708]:
+                        - img "work-place" [ref=e3710]:
+                          - img [ref=e3711]
+                        - generic "在职，看看新机会" [ref=e3713]
+                    - generic [ref=e3715]:
+                      - img "education" [ref=e3717]:
+                        - img [ref=e3718]
+                      - generic "北京交通大学 · 软件工程 · 硕士" [ref=e3721]: 北京交通大学 · 软件工程 · 硕士 · 统招
+                  - img [ref=e3724] [cursor=pointer]:
+                    - img [ref=e3725]:
+                      - img [ref=e3726]
+              - generic [ref=e3728]: 想去国央企，捞捞我，agent 和 apo
+              - generic [ref=e3730]:
+                - generic [ref=e3732]: 求职意向
+                - generic [ref=e3734]:
+                  - button "查看全部2个" [ref=e3735] [cursor=pointer]:
+                    - generic [ref=e3736]: 查看全部2个
+                  - list [ref=e3737]:
+                    - listitem [ref=e3738]:
+                      - paragraph [ref=e3739]:
+                        - generic "Java" [ref=e3740]
+                        - generic [ref=e3741]: 50-60k×14薪
+                      - paragraph [ref=e3742]:
+                        - generic "北京" [ref=e3743]
+                      - generic [ref=e3746]: 全部行业
+              - generic [ref=e3747]:
+                - generic [ref=e3749]: 工作经历
+                - generic [ref=e3751]:
+                  - generic [ref=e3752]:
+                    - img "logo" [ref=e3753]
+                    - generic [ref=e3754]:
+                      - generic [ref=e3755]:
+                        - generic [ref=e3756]:
+                          - heading "阿里 search" [level=2] [ref=e3757] [cursor=pointer]:
+                            - generic [ref=e3758]: 阿里
+                            - img "search" [ref=e3760]:
+                              - img [ref=e3761]
+                          - heading "Agent 开发工程师" [level=3] [ref=e3763]:
+                            - generic [ref=e3764]: Agent 开发工程师
+                        - paragraph [ref=e3765]: 2024.04-至今 (1年11个月)
+                      - paragraph [ref=e3766]: 智能模型部
+                      - paragraph [ref=e3767]: 千问 Agent 开发
+                  - generic [ref=e3768]:
+                    - generic [ref=e3769]:
+                      - img [ref=e3770]:
+                        - img [ref=e3771]
+                      - text: 与百度的工作经历时间重合
+                    - button "询问TA" [ref=e3773] [cursor=pointer]:
+                      - generic [ref=e3774]: 询问TA
+                  - generic [ref=e3775]:
+                    - img "logo" [ref=e3776]
+                    - generic [ref=e3777]:
+                      - generic [ref=e3778]:
+                        - generic [ref=e3779]:
+                          - heading "百度 search" [level=2] [ref=e3780] [cursor=pointer]:
+                            - generic [ref=e3781]: 百度
+                            - img "search" [ref=e3783]:
+                              - img [ref=e3784]
+                          - heading "Agent 开发工程师" [level=3] [ref=e3786]:
+                            - generic [ref=e3787]: Agent 开发工程师
+                        - paragraph [ref=e3788]: 2021.07-2025.04 (3年9个月)
+                      - paragraph
+                      - paragraph [ref=e3789]: 健康 Agent 开发
+              - generic [ref=e3790]:
+                - generic [ref=e3792]: 教育经历
+                - list [ref=e3795]:
+                  - listitem [ref=e3796]:
+                    - generic [ref=e3797]:
+                      - term [ref=e3798]
+                      - definition [ref=e3799]:
+                        - paragraph [ref=e3800]:
+                          - generic "北京交通大学" [ref=e3801]
+                          - generic [ref=e3802]:
+                            - generic "211" [ref=e3804]
+                            - generic "双一流" [ref=e3806]
+                            - generic [ref=e3808]: 统招
+                          - time [ref=e3809]: 2019.08-2021.08 (2年)
+                        - paragraph [ref=e3810]:
+                          - generic [ref=e3811]: 软件工程
+                          - generic [ref=e3812]: ·硕士
+                  - listitem [ref=e3813]:
+                    - generic [ref=e3814]:
+                      - term [ref=e3815]
+                      - definition [ref=e3816]:
+                        - paragraph [ref=e3817]:
+                          - generic "河北师范大学" [ref=e3818]
+                          - generic [ref=e3821]: 统招
+                          - time [ref=e3822]: 2015.08-2019.06 (4年)
+                        - paragraph [ref=e3823]:
+                          - generic [ref=e3824]: 软件工程
+                          - generic [ref=e3825]: ·本科
+              - generic [ref=e3826]:
+                - generic [ref=e3828]: 语言能力
+                - generic [ref=e3833]: 普通话(二级甲等、基础沟通)
+              - generic [ref=e3835] [cursor=pointer]:
+                - generic [ref=e3836]: 简历编号
+                - generic [ref=e3837]: ": 9fefeb638cS491dca7f946e"
+            - generic [ref=e3838]:
+              - generic [ref=e3839]:
+                - heading "觉得TA还不错：" [level=3] [ref=e3841]
+                - generic [ref=e3842]:
+                  - button "phone 获取电话" [ref=e3844] [cursor=pointer]:
+                    - img "phone" [ref=e3845]:
+                      - img [ref=e3846]
+                    - text: 获取电话
+                  - button "customer-service 意向沟通" [ref=e3849] [cursor=pointer]:
+                    - img "customer-service" [ref=e3850]:
+                      - img [ref=e3851]
+                    - text: 意向沟通
+                  - button "message 立即沟通" [ref=e3855] [cursor=pointer]:
+                    - img "message" [ref=e3856]:
+                      - img [ref=e3857]
+                    - text: 立即沟通
+              - generic [ref=e3859]:
+                - generic [ref=e3860]:
+                  - button "download 保存" [ref=e3861] [cursor=pointer]:
+                    - img "download" [ref=e3862]:
+                      - img [ref=e3863]
+                    - generic [ref=e3865]: 保存
+                  - button "solution 操作记录" [ref=e3866] [cursor=pointer]:
+                    - img "solution" [ref=e3867]:
+                      - img [ref=e3868]
+                    - generic [ref=e3870]: 操作记录
+                  - button "star 收藏" [ref=e3871] [cursor=pointer]:
+                    - img "star" [ref=e3872]:
+                      - img [ref=e3873]
+                    - generic [ref=e3875]: 收藏
+                - generic [ref=e3876]:
+                  - button "share 转发" [ref=e3877] [cursor=pointer]:
+                    - generic [ref=e3878]:
+                      - img "share" [ref=e3879]:
+                        - img [ref=e3880]
+                      - img [ref=e3882]:
+                        - img [ref=e3883]:
+                          - generic [ref=e3886]: NEW
+                    - generic [ref=e3887]: 转发
+                  - button "printer 打印" [ref=e3888] [cursor=pointer]:
+                    - img "printer" [ref=e3889]:
+                      - img [ref=e3890]
+                    - generic [ref=e3895]: 打印
+                  - button "exclamation-circle 举报" [ref=e3896] [cursor=pointer]:
+                    - img "exclamation-circle" [ref=e3897]:
+                      - img [ref=e3898]
+                    - generic [ref=e3900]: 举报
+              - generic [ref=e3902]:
+                - generic [ref=e3903]: 简历备注
+                - textbox "请输入备注内容" [ref=e3905]
+                - generic [ref=e3909]: 暂无备注内容
+        - img [ref=e3911]:
+          - img [ref=e3912]
+        - img [ref=e3917] [cursor=pointer]:
+          - img [ref=e3918]
+  - tooltip "点击这里，查看下一份简历 我知道了" [ref=e3924]:
+    - generic [ref=e3926]:
+      - generic [ref=e3928]: 点击这里，查看下一份简历
+      - button "我知道了" [ref=e3930] [cursor=pointer]:
+        - generic [ref=e3931]: 我知道了

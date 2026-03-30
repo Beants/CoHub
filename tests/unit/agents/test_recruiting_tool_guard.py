@@ -11,8 +11,125 @@ from agentscope.message import Msg
 from copaw.agents.recruiting_tool_guard import (
     find_recruiting_stop_context,
     should_block_recruiting_tool_call,
+    build_recruiting_stop_reply,
+    find_latest_recruiting_tool_context,
+)
+from copaw.agents.skill_hooks import (
+    clear_all_hooks,
+    register_blocked_text_hook,
+    register_latest_context_hook,
+    register_stop_context_hook,
+    register_stop_reply_hook,
+    register_tool_block_hook,
+    SkillFlowContext,
 )
 from copaw.agents.tool_guard_mixin import ToolGuardMixin
+
+
+# ------------------------------------------------------------------
+# Hook adapters: bridge old recruiting_tool_guard → new hook system
+# ------------------------------------------------------------------
+
+def _recruiting_tool_block_hook(memory_content, tool_name):
+    ctx = should_block_recruiting_tool_call(memory_content, tool_name)
+    if ctx is None:
+        return None
+    return SkillFlowContext(
+        skill="recruiting",
+        site=ctx.site,
+        status=ctx.status,
+        stop_current_turn=ctx.stop_current_turn,
+        source_tool=ctx.source_tool,
+        message=ctx.message,
+        continue_tool=ctx.continue_tool,
+        summary_markdown=ctx.summary_markdown,
+    )
+
+
+def _recruiting_stop_context_hook(memory_content):
+    ctx = find_recruiting_stop_context(memory_content)
+    if ctx is None:
+        return None
+    return SkillFlowContext(
+        skill="recruiting",
+        site=ctx.site,
+        status=ctx.status,
+        stop_current_turn=ctx.stop_current_turn,
+        source_tool=ctx.source_tool,
+        message=ctx.message,
+        continue_tool=ctx.continue_tool,
+        summary_markdown=ctx.summary_markdown,
+    )
+
+
+def _recruiting_latest_context_hook(memory_content):
+    ctx = find_latest_recruiting_tool_context(memory_content)
+    if ctx is None:
+        return None
+    return SkillFlowContext(
+        skill="recruiting",
+        site=ctx.site,
+        status=ctx.status,
+        stop_current_turn=ctx.stop_current_turn,
+        source_tool=ctx.source_tool,
+        message=ctx.message,
+        continue_tool=ctx.continue_tool,
+        summary_markdown=ctx.summary_markdown,
+    )
+
+
+def _recruiting_stop_reply_hook(context):
+    from copaw.agents.recruiting_tool_guard import (
+        RecruitingFlowContext,
+        build_recruiting_stop_reply,
+    )
+    rfc = RecruitingFlowContext(
+        site=context.site,
+        status=context.status,
+        stop_current_turn=context.stop_current_turn,
+        source_tool=context.source_tool,
+        message=context.message,
+        continue_tool=context.continue_tool,
+        summary_markdown=context.summary_markdown,
+    )
+    return build_recruiting_stop_reply(rfc)
+
+
+def _recruiting_blocked_text_hook(context, tool_name):
+    blocked_text = (
+        f"⛔ **Recruiting Flow Stopped / 招聘流程已停止**\n\n"
+        f"- Tool / 工具: `{tool_name}`\n"
+        f"- Site / 站点: `{context.site}`\n"
+        f"- Previous status / 上一状态: `{context.status}`\n"
+        f"- Source tool / 来源工具: `{context.source_tool}`\n"
+        f"- stop_current_turn={str(context.stop_current_turn).lower()}\n\n"
+        f"{context.message}\n\n"
+    )
+    if context.stop_current_turn:
+        blocked_text += (
+            "This turn already received a stop signal. Do not call "
+            f"`browser_use` or any `{context.site}_*` tool again until the "
+            "user sends a new message.\n"
+        )
+    else:
+        blocked_text += (
+            "This recruiting flow is already active in the current "
+            "turn. Do not switch to `browser_use`; stay inside the "
+            "MCP tools for this turn.\n"
+        )
+    return blocked_text
+
+
+@pytest.fixture(autouse=True)
+def _register_recruiting_hooks():
+    """Register recruiting hooks before each test, clear after."""
+    register_tool_block_hook(_recruiting_tool_block_hook)
+    register_stop_context_hook(_recruiting_stop_context_hook)
+    register_latest_context_hook(_recruiting_latest_context_hook)
+    register_stop_reply_hook(_recruiting_stop_reply_hook)
+    register_blocked_text_hook(_recruiting_blocked_text_hook)
+    yield
+    clear_all_hooks()
 
 
 def _user_msg(text: str = "search liepin") -> Msg:
